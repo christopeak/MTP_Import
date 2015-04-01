@@ -27,12 +27,69 @@ class PlanProject
     @mile_post_to = c.css('milepost-b').first.content.empty? ? 'NULL' : c.css('milepost-b').first.content
     @func_class_id = c.css('functional-class').first.content.empty? ? 'NULL' : c.css('functional-class').first.content
     @start_year = c.css('start-year').first.content
+    @p_a1a = c.css('prioritization-a1a').first.content == 'true' ? 1 : 0
+    @p_a1b = c.css("prioritization-a1b").first.content == 'true' ? 1 : 0
+    @p_a2a = c.css("prioritization-a2a").first.content== 'true'  ? 1 : 0
+    @p_a2b = c.css("prioritization-a2b").first.content == 'true'  ? 1 : 0
+    @p_a3 = c.css("prioritization-a3").first.content == 'true' ? 1 : 0
+    @p_a4 = c.css("prioritization-a4").first.content == 'true' ? 1 : 0
+    @p_c1a = c.css("prioritization-c1a").first.content == 'true' ? 1 : 0
+    @p_c1b = c.css("prioritization-c1c").first.content == 'true' ? 1 : 0
+    @p_c1c = c.css("prioritization-c1d").first.content == 'true' ? 1 : 0
+    @p_c2a = c.css("prioritization-c2a").first.content == 'true' ? 1 : 0
+    @p_c2b = c.css("prioritization-c2b").first.content == 'true' ? 1 : 0
+    @p_c3 = c.css("prioritization-c3").first.content == 'true' ? 1 : 0
+    @p_c4 = c.css("prioritization-c4").first.content == 'true' ? 1 : 0
+    @p_c5 = c.css("prioritization-c5").first.content == 'true' ? 1 : 0
+    @p_f1 = c.css("prioritization-f1").first.content == 'true' ? 1 : 0
+    @p_f2 = c.css("prioritization-f2").first.content == 'true' ? 1 : 0
+    @p_f3 = c.css("prioritization-f3").first.content == 'true' ? 1 : 0
+    @p_f4a = c.css("prioritization-f4a").first.content == 'true' ? 1 : 0
+    @p_f4b = c.css("prioritization-f4b").first.content == 'true' ? 1 : 0
+    @p_f5 = c.css("prioritization-f5").first.content == 'true' ? 1 : 0
+    @p_f6 = c.css("prioritization-f6").first.content == 'true' ? 1 : 0
+    @p_j1a = c.css("prioritization-j1a").first.content == 'true' ? 1 : 0
+    @p_j1b = c.css("prioritization-j1b").first.content == 'true' ? 1 : 0
+    @p_j2 = c.css("prioritization-j2").first.content == 'true' ? 1 : 0
+    @p_j3 = c.css("prioritization-j3").first.content == 'true' ? 1 : 0
+    @p_j4 = c.css("prioritization-j4").first.content == 'true' ? 1 : 0
+    @p_m1 = c.css("prioritization-m1").first.content == 'true' ? 1 : 0
+    @p_m2 = c.css("prioritization-m2").first.content == 'true' ? 1 : 0
+    @p_m3 = c.css("prioritization-m3").first.content == 'true' ? 1 : 0
+    @p_m4 = c.css("prioritization-m4").first.content == 'true' ? 1 : 0
+    @p_m5 = c.css("prioritization-m5").first.content == 'true' ? 1 : 0
+    @p_m6 = c.css("prioritization-m6").first.content == 'true' ? 1 : 0
+    @p_m7 = c.css("prioritization-m7").first.content == 'true' ? 1 : 0
+    @p_o1 = c.css("prioritization-o1").first.content == 'true' ? 1 : 0
+    @p_o2a = c.css("prioritization-o2a").first.content == 'true' ? 1 : 0
+    @p_o2b = c.css("prioritization-o2b").first.content == 'true' ? 1 : 0
+    @p_o2c = c.css("prioritization-o2c").first.content == 'true' ? 1 : 0
+    @p_o3a = c.css("prioritization-o3a").first.content == 'true' ? 1 : 0
+    @p_o3b = c.css("prioritization-o3b").first.content == 'true' ? 1 : 0
+    @p_o3c = c.css("prioritization-o3c").first.content == 'true' ? 1 : 0
+    @p_s1a = c.css("prioritization-s1a").first.content == 'true' ? 1 : 0
+    @p_s1b = c.css("prioritization-s1b").first.content == 'true' ? 1 : 0
+    @p_s1c = c.css("prioritization-s1c").first.content == 'true' ? 1 : 0
+    @p_s2 = c.css("prioritization-s2").first.content == 'true' ? 1 : 0
+    @p_t1 = c.css("prioritization-t1").first.content == 'true' ? 1 : 0
+    @p_t2 = c.css("prioritization-t2").first.content == 'true' ? 1 : 0
+    @p_t3 = c.css("prioritization-t3").first.content == 'true' ? 1 : 0
+    @p_t4 = c.css("prioritization-t4").first.content == 'true' ? 1 : 0
+    @p_w1a = c.css("prioritization-w1a").first.content == 'true' ? 1 : 0
+    @p_w1b = c.css("prioritization-w1b").first.content == 'true' ? 1 : 0
+    @p_w1c = c.css("prioritization-w1c").first.content == 'true' ? 1 : 0
+    @p_w1d = c.css("prioritization-w1d").first.content == 'true' ? 1 : 0
+    @p_w2 = c.css("prioritization-w2").first.content == 'true' ? 1 : 0
+    @p_w4a = c.css("prioritization-w4a").first.content == 'true' ? 1 : 0
+    @p_w4b = c.css("prioritization-w4b").first.content == 'true' ? 1 : 0
   end
   
   def send_to_db
     #create an input query and fire it off to SQL Server via shell command
+    db = 'MTPData_dev'
+
     command = <<-COMMAND
-    SQLCMD -S SQL2008\\\PSRCSQL -E -d MTPData_dev -Q 
+    SQLCMD -S SQL2008\\\PSRCSQL -E -d #{db} -Q 
     COMMAND
 
 
@@ -49,17 +106,48 @@ class PlanProject
     #{@start_year})"
     QUERY
     
-    combined_command = command + ' ' + @qry
 
+    @prioritization_qry = <<-PQUERY
+    "INSERT INTO tblStagePrioritization 
+      (MTPID, a1a, a1b,  a2a, a2b, a3, a4, 
+      c1a, c1b, c1c, c2a, c2b, c3, c4, c5, 
+      f1, f2, f3, f4a,  f4b, f5, f6, 
+      j1a, j1b, j2, j3, j4, 
+      m1, m2, m3, m4, m5, m6, m7, 
+      o1, o2a, o2b, o2c, o3a, o3b, o3c, 
+      s1a, s1b, s1c, s2, 
+      t1, t2, t3, t4, 
+      w1a, w1b, w1c, w1d, w2, w4a, w4b )
+    VALUES
+    (
+      #{mtpid},#{@p_a1a},#{@p_a1b},#{@p_a2a},#{@p_a2b},#{@p_a3},#{@p_a4},
+      #{@p_c1a},#{@p_c1b},#{@p_c1c},#{@p_c2a},#{@p_c2b},#{@p_c3},#{@p_c4},#{@p_c5},
+      #{@p_f1},#{@p_f2}, #{@p_f3},#{@p_f4a},#{@p_f4b},#{@p_f5},#{@p_f6},
+      #{@p_j1a},#{@p_j1b},#{@p_j2}, #{@p_j3},#{@p_j4},
+      #{@p_m1},#{@p_m2},#{@p_m3},#{@p_m4},#{@p_m5},#{@p_m6},#{@p_m7},
+      #{@p_o1},#{@p_o2a},#{@p_o2b},#{@p_o2c},#{@p_o3a},#{@p_o3b},#{@p_o3c},
+      #{@p_s1a},#{@p_s1b},#{@p_s1c},#{@p_s2},
+      #{@p_t1},#{@p_t2},#{@p_t3},#{@p_t4},
+      #{@p_w1a},#{@p_w1b},#{@p_w1c},#{@p_w1d},#{@p_w2},#{@p_w4a},#{@p_w4b}
+    )"                                        
+    PQUERY
+
+    combined_command = command + ' ' + @qry
     combined_command.gsub!(/\n/,' ')
+    combined_prioritization_query = (command + ' ' + @prioritization_qry).gsub(/\n/,' ')
 
     #combined_command.gsub!(/,,,/,',NULL,NULL,')
     
     #puts combined_command
     #3.times {puts ""}
-    File.open('mtp_project_out.txt', 'a') {|file| file.write("\n#{combined_command}\n")}
+    File.open('mtp_project_out.txt', 'a') {|file| file.write("\n#{combined_prioritization_query}\n")}
 
     `#{combined_command}`
+
+    #puts @prioritization_qry
+    `#{combined_prioritization_query}`
+
+    puts "Added project #{mtpid} to staging tables."
   end 
 end
 
