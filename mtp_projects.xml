@@ -14,58 +14,621 @@
 <change-sponsoring-agency type="boolean" nil="true"/>
 <change-title type="boolean" nil="true"/>
 <change-total-cost type="boolean" nil="true"/>
-<completion-year type="date">2016-01-01</completion-year>
-<constant-dollar-year type="date">2015-04-01</constant-dollar-year>
-<contact-email>christop.eak@gmail.com</contact-email>
-<contact-first-name>Chris</contact-first-name>
-<contact-last-name>Peak</contact-last-name>
-<contact-phone>2063844585</contact-phone>
-<county-id type="integer">2</county-id>
-<created-at type="datetime">2015-04-01T11:54:42-07:00</created-at>
+<completion-year type="date">2018-01-01</completion-year>
+<constant-dollar-year type="date">2018-03-31</constant-dollar-year>
+<contact-email>melissa.cauley@commtrans.org</contact-email>
+<contact-first-name>Melissa</contact-first-name>
+<contact-last-name>Cauley</contact-last-name>
+<contact-phone>425-438-6190</contact-phone>
+<county-id type="integer">5</county-id>
+<created-at type="datetime">2015-03-31T12:46:16-07:00</created-at>
 <description>
-Prioritization Form test, replicating the responses for MTPID 112 during the 2014 update.
+Swift II Bus Rapid Transit will be Community Transit's 2nd line of BRT, traveling between the Canyon Park Park & Ride and Paine Field/Boeing. This 12 mile corridor will have 15 stations in each direction served by 60 ft articulated buses. Swift II BRT will meet a critical need for east-west transportation options in Snohomish County, connecting a Regional Growth Center (Canyon Park) with a Regional Manufacturing and Industrial Growth Center (Paine Field). This service will be all day bi-directional service operating at a 10 min frequency during peak hours.
 </description>
-<endpoint-a>fsda</endpoint-a>
-<endpoint-b>sdfa</endpoint-b>
+<endpoint-a>Canyon Park Park & Ride</endpoint-a>
+<endpoint-b>Seaway and 75th Street</endpoint-b>
 <functional-class>0</functional-class>
-<funds-description>fdsa</funds-description>
-<id type="integer">24</id>
-<letters-of-concurrence>dfas</letters-of-concurrence>
-<location>fsad</location>
+<funds-description>
+Community Transit currently has $4.2 million dollars to complete project development for Swift II BRT. We are also on the list of proposed projects for the Washington State Regional Mobility grant program for $8.5 million dollars for the Seaway Transit Center the northern terminus of Swift II BRT. We will submit for a rating to the FTA Small Starts grant program in Fall 2015 with the intent to sign a SSGA in Fall of 2016.
+</funds-description>
+<id type="integer">23</id>
+<letters-of-concurrence>
+Community Transit is currently in the middle of Project Development for Swift II BRT in order to qualify for federal FTA Small Starts funding. Affected parties include City of Everett, WSDOT, Snohomish County, City of Mill Creek and the City of Bothell. Joint work is being done with all affected jurisdictions.
+</letters-of-concurrence>
+<location>Swift Corridor</location>
 <milepost-a type="decimal" nil="true"/>
 <milepost-b type="decimal" nil="true"/>
 <modify-constrained-project-details type="boolean">false</modify-constrained-project-details>
 <modify-from-unprogrammed-to-constrained type="boolean">true</modify-from-unprogrammed-to-constrained>
 <mtp-status>NULL</mtp-status>
 <new-project type="boolean">false</new-project>
-<planning-process>sdfa</planning-process>
-<primary-improvement-type-id type="integer">1</primary-improvement-type-id>
-<prioritization-a1a type="boolean" nil="true"/>
-<prioritization-a1b type="boolean">true</prioritization-a1b>
-<prioritization-a2a type="boolean">false</prioritization-a2a>
+<planning-process>
+This project is identified in Community Transit's 20 year Long Range Transit Plan and our 2015-2019 Transit Development Plan as one of Community Transit's "Transit Emphasis Corridors" a network that represents the future investment of high capacity transit service
+</planning-process>
+<primary-improvement-type-id type="integer">28</primary-improvement-type-id>
+<prioritization-a1a type="boolean">true</prioritization-a1a>
+<prioritization-a1b type="boolean">false</prioritization-a1b>
+<prioritization-a2a type="boolean">true</prioritization-a2a>
 <prioritization-a2b type="boolean">true</prioritization-a2b>
-<prioritization-a3 type="boolean">false</prioritization-a3>
-<prioritization-a4 type="boolean">false</prioritization-a4>
-<prioritization-a4-continued/>
-<prioritization-c1a type="boolean">false</prioritization-c1a>
+<prioritization-a3 type="boolean">true</prioritization-a3>
+<prioritization-a4 type="boolean">true</prioritization-a4>
+<prioritization-a4-continued>Hybrid buses</prioritization-a4-continued>
+<prioritization-c1a type="boolean">true</prioritization-c1a>
 <prioritization-c1c type="boolean">true</prioritization-c1c>
-<prioritization-c1d type="boolean">false</prioritization-c1d>
-<prioritization-c2a type="boolean">false</prioritization-c2a>
+<prioritization-c1d type="boolean">true</prioritization-c1d>
+<prioritization-c2a type="boolean">true</prioritization-c2a>
 <prioritization-c2b type="boolean">true</prioritization-c2b>
-<prioritization-c3 type="boolean">false</prioritization-c3>
+<prioritization-c3 type="boolean">true</prioritization-c3>
 <prioritization-c4 type="boolean">false</prioritization-c4>
-<prioritization-c5 type="boolean">false</prioritization-c5>
+<prioritization-c5 type="boolean">true</prioritization-c5>
 <prioritization-f1 type="boolean">false</prioritization-f1>
-<prioritization-f2 type="boolean">true</prioritization-f2>
-<prioritization-f3 type="boolean">true</prioritization-f3>
-<prioritization-f4a type="boolean" nil="true"/>
-<prioritization-f4b type="boolean">false</prioritization-f4b>
+<prioritization-f2 type="boolean">false</prioritization-f2>
+<prioritization-f3 type="boolean">false</prioritization-f3>
+<prioritization-f4a type="boolean">true</prioritization-f4a>
+<prioritization-f4b type="boolean">true</prioritization-f4b>
 <prioritization-f5 type="boolean">false</prioritization-f5>
-<prioritization-f6 type="boolean">true</prioritization-f6>
+<prioritization-f6 type="boolean">false</prioritization-f6>
 <prioritization-j1a type="boolean">true</prioritization-j1a>
 <prioritization-j1b type="boolean">true</prioritization-j1b>
 <prioritization-j2 type="boolean">true</prioritization-j2>
 <prioritization-j3 type="boolean">true</prioritization-j3>
+<prioritization-j4 type="boolean">false</prioritization-j4>
+<prioritization-m1 type="boolean">true</prioritization-m1>
+<prioritization-m2 type="boolean">true</prioritization-m2>
+<prioritization-m3 type="boolean">true</prioritization-m3>
+<prioritization-m4 type="boolean">false</prioritization-m4>
+<prioritization-m5 type="boolean">false</prioritization-m5>
+<prioritization-m6 type="boolean">false</prioritization-m6>
+<prioritization-m7 type="boolean">true</prioritization-m7>
+<prioritization-o1 type="boolean">false</prioritization-o1>
+<prioritization-o2a type="boolean">true</prioritization-o2a>
+<prioritization-o2b type="boolean" nil="true"/>
+<prioritization-o2c type="boolean" nil="true"/>
+<prioritization-o3a type="boolean" nil="true"/>
+<prioritization-o3b type="boolean" nil="true"/>
+<prioritization-o3c type="boolean">true</prioritization-o3c>
+<prioritization-s1a type="boolean">false</prioritization-s1a>
+<prioritization-s1b type="boolean">false</prioritization-s1b>
+<prioritization-s1c type="boolean">false</prioritization-s1c>
+<prioritization-s2 type="boolean">false</prioritization-s2>
+<prioritization-t1 type="boolean">true</prioritization-t1>
+<prioritization-t2 type="boolean">true</prioritization-t2>
+<prioritization-t3 type="boolean">true</prioritization-t3>
+<prioritization-t4 type="boolean">false</prioritization-t4>
+<prioritization-w1a type="boolean">false</prioritization-w1a>
+<prioritization-w1b type="boolean">true</prioritization-w1b>
+<prioritization-w1c type="boolean" nil="true"/>
+<prioritization-w1d type="boolean" nil="true"/>
+<prioritization-w2 type="boolean">true</prioritization-w2>
+<prioritization-w4a type="boolean">false</prioritization-w4a>
+<prioritization-w4b type="boolean">true</prioritization-w4b>
+<project-id type="integer">5466</project-id>
+<sponsoring-agency-id type="integer">22</sponsoring-agency-id>
+<start-year type="date">2015-01-01</start-year>
+<status>submitted</status>
+<submitted-at type="datetime">2015-03-31T14:19:57-07:00</submitted-at>
+<title>
+Core or Swift BRT - SR 527 Downtown Bothell to SR 526/I-5
+</title>
+<total-cost type="decimal">52000000.0</total-cost>
+<updated-at type="datetime">2015-03-31T14:19:57-07:00</updated-at>
+<user-id type="integer">28</user-id>
+</mtp-project>
+<mtp-project>
+<accepted-at type="datetime" nil="true"/>
+<change-completion-year type="boolean">false</change-completion-year>
+<change-constant-dollar-year type="boolean">false</change-constant-dollar-year>
+<change-cosponsors type="boolean" nil="true"/>
+<change-description type="boolean">true</change-description>
+<change-functional-class type="boolean">false</change-functional-class>
+<change-in-project-scope type="boolean">false</change-in-project-scope>
+<change-location-information type="boolean">true</change-location-information>
+<change-mtp-status type="boolean" nil="true"/>
+<change-primary-improvement-type type="boolean">false</change-primary-improvement-type>
+<change-secondary-improvement-types type="boolean">false</change-secondary-improvement-types>
+<change-sponsoring-agency type="boolean" nil="true"/>
+<change-title type="boolean" nil="true"/>
+<change-total-cost type="boolean">true</change-total-cost>
+<completion-year type="date">2015-01-01</completion-year>
+<constant-dollar-year type="date" nil="true"/>
+<contact-email>dsheesley@cityoftacoma.org</contact-email>
+<contact-first-name>Diane</contact-first-name>
+<contact-last-name>Sheesley</contact-last-name>
+<contact-phone>253-208-0486</contact-phone>
+<county-id type="integer">4</county-id>
+<created-at type="datetime">2015-03-30T09:29:51-07:00</created-at>
+<description>
+Phase IV -- construct an active transportation shared use path adjacent to South Tacoma Way from South M Street to South C Street.
+</description>
+<endpoint-a>South M Street</endpoint-a>
+<endpoint-b>South C Street</endpoint-b>
+<functional-class nil="true"/>
+<funds-description>
+There is CMAQ and City matching funds for both design and construction of this phase of the project.
+</funds-description>
+<id type="integer">22</id>
+<letters-of-concurrence>N/A</letters-of-concurrence>
+<location>South Tacoma Way</location>
+<milepost-a type="decimal" nil="true"/>
+<milepost-b type="decimal" nil="true"/>
+<modify-constrained-project-details type="boolean">true</modify-constrained-project-details>
+<modify-from-unprogrammed-to-constrained type="boolean">false</modify-from-unprogrammed-to-constrained>
+<mtp-status>1</mtp-status>
+<new-project type="boolean">false</new-project>
+<planning-process>
+This project is listed in the Transportation Element of the Comprehensive Plan under section T-ICCP-2 Active Transportation Regional Coordination as well as Priority #13 on the short term bicycle project priority list.
+</planning-process>
+<primary-improvement-type-id type="integer" nil="true"/>
+<prioritization-a1a type="boolean" nil="true"/>
+<prioritization-a1b type="boolean" nil="true"/>
+<prioritization-a2a type="boolean" nil="true"/>
+<prioritization-a2b type="boolean" nil="true"/>
+<prioritization-a3 type="boolean" nil="true"/>
+<prioritization-a4 type="boolean" nil="true"/>
+<prioritization-a4-continued nil="true"/>
+<prioritization-c1a type="boolean" nil="true"/>
+<prioritization-c1c type="boolean" nil="true"/>
+<prioritization-c1d type="boolean" nil="true"/>
+<prioritization-c2a type="boolean" nil="true"/>
+<prioritization-c2b type="boolean" nil="true"/>
+<prioritization-c3 type="boolean" nil="true"/>
+<prioritization-c4 type="boolean" nil="true"/>
+<prioritization-c5 type="boolean" nil="true"/>
+<prioritization-f1 type="boolean" nil="true"/>
+<prioritization-f2 type="boolean" nil="true"/>
+<prioritization-f3 type="boolean" nil="true"/>
+<prioritization-f4a type="boolean" nil="true"/>
+<prioritization-f4b type="boolean" nil="true"/>
+<prioritization-f5 type="boolean" nil="true"/>
+<prioritization-f6 type="boolean" nil="true"/>
+<prioritization-j1a type="boolean" nil="true"/>
+<prioritization-j1b type="boolean" nil="true"/>
+<prioritization-j2 type="boolean" nil="true"/>
+<prioritization-j3 type="boolean" nil="true"/>
+<prioritization-j4 type="boolean" nil="true"/>
+<prioritization-m1 type="boolean" nil="true"/>
+<prioritization-m2 type="boolean" nil="true"/>
+<prioritization-m3 type="boolean" nil="true"/>
+<prioritization-m4 type="boolean" nil="true"/>
+<prioritization-m5 type="boolean" nil="true"/>
+<prioritization-m6 type="boolean" nil="true"/>
+<prioritization-m7 type="boolean" nil="true"/>
+<prioritization-o1 type="boolean" nil="true"/>
+<prioritization-o2a type="boolean" nil="true"/>
+<prioritization-o2b type="boolean" nil="true"/>
+<prioritization-o2c type="boolean" nil="true"/>
+<prioritization-o3a type="boolean" nil="true"/>
+<prioritization-o3b type="boolean" nil="true"/>
+<prioritization-o3c type="boolean" nil="true"/>
+<prioritization-s1a type="boolean" nil="true"/>
+<prioritization-s1b type="boolean" nil="true"/>
+<prioritization-s1c type="boolean" nil="true"/>
+<prioritization-s2 type="boolean" nil="true"/>
+<prioritization-t1 type="boolean" nil="true"/>
+<prioritization-t2 type="boolean" nil="true"/>
+<prioritization-t3 type="boolean" nil="true"/>
+<prioritization-t4 type="boolean" nil="true"/>
+<prioritization-w1a type="boolean" nil="true"/>
+<prioritization-w1b type="boolean" nil="true"/>
+<prioritization-w1c type="boolean" nil="true"/>
+<prioritization-w1d type="boolean" nil="true"/>
+<prioritization-w2 type="boolean" nil="true"/>
+<prioritization-w4a type="boolean" nil="true"/>
+<prioritization-w4b type="boolean" nil="true"/>
+<project-id type="integer">4293</project-id>
+<sponsoring-agency-id type="integer">112</sponsoring-agency-id>
+<start-year type="date">2013-01-01</start-year>
+<status>submitted</status>
+<submitted-at type="datetime">2015-03-30T10:22:56-07:00</submitted-at>
+<title>Historic Water Ditch Trail Phase IV</title>
+<total-cost type="decimal">2489828.0</total-cost>
+<updated-at type="datetime">2015-03-30T10:22:56-07:00</updated-at>
+<user-id type="integer">129</user-id>
+</mtp-project>
+<mtp-project>
+<accepted-at type="datetime" nil="true"/>
+<change-completion-year type="boolean">true</change-completion-year>
+<change-constant-dollar-year type="boolean">true</change-constant-dollar-year>
+<change-cosponsors type="boolean" nil="true"/>
+<change-description type="boolean">true</change-description>
+<change-functional-class type="boolean">false</change-functional-class>
+<change-in-project-scope type="boolean">false</change-in-project-scope>
+<change-location-information type="boolean">true</change-location-information>
+<change-mtp-status type="boolean" nil="true"/>
+<change-primary-improvement-type type="boolean">false</change-primary-improvement-type>
+<change-secondary-improvement-types type="boolean">false</change-secondary-improvement-types>
+<change-sponsoring-agency type="boolean" nil="true"/>
+<change-title type="boolean" nil="true"/>
+<change-total-cost type="boolean">true</change-total-cost>
+<completion-year type="date">2018-01-01</completion-year>
+<constant-dollar-year type="date">2015-03-30</constant-dollar-year>
+<contact-email>dsheesley@cityoftacoma.org</contact-email>
+<contact-first-name>Diane</contact-first-name>
+<contact-last-name>Sheesley</contact-last-name>
+<contact-phone>253-591-5358</contact-phone>
+<county-id type="integer">4</county-id>
+<created-at type="datetime">2015-03-30T07:52:27-07:00</created-at>
+<description>
+Phase III --construct an active transportation shared use path adjacent to South Tacoma Way between S. Pine Street and S. M Street.
+</description>
+<endpoint-a>S.Pine St.</endpoint-a>
+<endpoint-b>S. M St.</endpoint-b>
+<functional-class nil="true"/>
+<funds-description>
+There is $700,000 in funds for phase III & IV in a joint grant. It is approximated $375,000 will be used for design of phase III and the remainder spent on phase IV. There is an unfunded construction need of approx. $6,500,000 and the City will be applying for grant funds for this project as grant opportunities are presented.
+</funds-description>
+<id type="integer">20</id>
+<letters-of-concurrence>N/A</letters-of-concurrence>
+<location>South Tacoma Way</location>
+<milepost-a type="decimal" nil="true"/>
+<milepost-b type="decimal" nil="true"/>
+<modify-constrained-project-details type="boolean">true</modify-constrained-project-details>
+<modify-from-unprogrammed-to-constrained type="boolean">false</modify-from-unprogrammed-to-constrained>
+<mtp-status>1</mtp-status>
+<new-project type="boolean">false</new-project>
+<planning-process>
+Yes, it is listed in T-ICCP-2 Active Transportation Regional Coordination and is priority 13 on the short term bicycle project priority list on Table 2 in the Transportation Element.
+</planning-process>
+<primary-improvement-type-id type="integer" nil="true"/>
+<prioritization-a1a type="boolean" nil="true"/>
+<prioritization-a1b type="boolean" nil="true"/>
+<prioritization-a2a type="boolean" nil="true"/>
+<prioritization-a2b type="boolean" nil="true"/>
+<prioritization-a3 type="boolean" nil="true"/>
+<prioritization-a4 type="boolean" nil="true"/>
+<prioritization-a4-continued nil="true"/>
+<prioritization-c1a type="boolean" nil="true"/>
+<prioritization-c1c type="boolean" nil="true"/>
+<prioritization-c1d type="boolean" nil="true"/>
+<prioritization-c2a type="boolean" nil="true"/>
+<prioritization-c2b type="boolean" nil="true"/>
+<prioritization-c3 type="boolean" nil="true"/>
+<prioritization-c4 type="boolean" nil="true"/>
+<prioritization-c5 type="boolean" nil="true"/>
+<prioritization-f1 type="boolean" nil="true"/>
+<prioritization-f2 type="boolean" nil="true"/>
+<prioritization-f3 type="boolean" nil="true"/>
+<prioritization-f4a type="boolean" nil="true"/>
+<prioritization-f4b type="boolean" nil="true"/>
+<prioritization-f5 type="boolean" nil="true"/>
+<prioritization-f6 type="boolean" nil="true"/>
+<prioritization-j1a type="boolean" nil="true"/>
+<prioritization-j1b type="boolean" nil="true"/>
+<prioritization-j2 type="boolean" nil="true"/>
+<prioritization-j3 type="boolean" nil="true"/>
+<prioritization-j4 type="boolean" nil="true"/>
+<prioritization-m1 type="boolean" nil="true"/>
+<prioritization-m2 type="boolean" nil="true"/>
+<prioritization-m3 type="boolean" nil="true"/>
+<prioritization-m4 type="boolean" nil="true"/>
+<prioritization-m5 type="boolean" nil="true"/>
+<prioritization-m6 type="boolean" nil="true"/>
+<prioritization-m7 type="boolean" nil="true"/>
+<prioritization-o1 type="boolean" nil="true"/>
+<prioritization-o2a type="boolean" nil="true"/>
+<prioritization-o2b type="boolean" nil="true"/>
+<prioritization-o2c type="boolean" nil="true"/>
+<prioritization-o3a type="boolean" nil="true"/>
+<prioritization-o3b type="boolean" nil="true"/>
+<prioritization-o3c type="boolean" nil="true"/>
+<prioritization-s1a type="boolean" nil="true"/>
+<prioritization-s1b type="boolean" nil="true"/>
+<prioritization-s1c type="boolean" nil="true"/>
+<prioritization-s2 type="boolean" nil="true"/>
+<prioritization-t1 type="boolean" nil="true"/>
+<prioritization-t2 type="boolean" nil="true"/>
+<prioritization-t3 type="boolean" nil="true"/>
+<prioritization-t4 type="boolean" nil="true"/>
+<prioritization-w1a type="boolean" nil="true"/>
+<prioritization-w1b type="boolean" nil="true"/>
+<prioritization-w1c type="boolean" nil="true"/>
+<prioritization-w1d type="boolean" nil="true"/>
+<prioritization-w2 type="boolean" nil="true"/>
+<prioritization-w4a type="boolean" nil="true"/>
+<prioritization-w4b type="boolean" nil="true"/>
+<project-id type="integer">4292</project-id>
+<sponsoring-agency-id type="integer">112</sponsoring-agency-id>
+<start-year type="date">2013-01-01</start-year>
+<status>submitted</status>
+<submitted-at type="datetime">2015-03-30T09:29:30-07:00</submitted-at>
+<title>Historic Water Ditch Trail Phase III</title>
+<total-cost type="decimal">6875000.0</total-cost>
+<updated-at type="datetime">2015-03-30T09:29:30-07:00</updated-at>
+<user-id type="integer">129</user-id>
+</mtp-project>
+<mtp-project>
+<accepted-at type="datetime" nil="true"/>
+<change-completion-year type="boolean">true</change-completion-year>
+<change-constant-dollar-year type="boolean">true</change-constant-dollar-year>
+<change-cosponsors type="boolean" nil="true"/>
+<change-description type="boolean">false</change-description>
+<change-functional-class type="boolean">false</change-functional-class>
+<change-in-project-scope type="boolean">false</change-in-project-scope>
+<change-location-information type="boolean">false</change-location-information>
+<change-mtp-status type="boolean" nil="true"/>
+<change-primary-improvement-type type="boolean">true</change-primary-improvement-type>
+<change-secondary-improvement-types type="boolean">false</change-secondary-improvement-types>
+<change-sponsoring-agency type="boolean" nil="true"/>
+<change-title type="boolean" nil="true"/>
+<change-total-cost type="boolean">true</change-total-cost>
+<completion-year type="date">2020-01-01</completion-year>
+<constant-dollar-year type="date">2013-03-25</constant-dollar-year>
+<contact-email>dsheesley@cityoftacoma.org</contact-email>
+<contact-first-name>Diane</contact-first-name>
+<contact-last-name>Sheesley</contact-last-name>
+<contact-phone>253-591-5358</contact-phone>
+<county-id type="integer" nil="true"/>
+<created-at type="datetime">2015-03-25T09:21:32-07:00</created-at>
+<description nil="true"/>
+<endpoint-a nil="true"/>
+<endpoint-b nil="true"/>
+<functional-class nil="true"/>
+<funds-description>
+$1,352,800 PSRC for design $182,600 Local match for design
+</funds-description>
+<id type="integer">17</id>
+<letters-of-concurrence>No concurrence is necessary</letters-of-concurrence>
+<location nil="true"/>
+<milepost-a type="decimal" nil="true"/>
+<milepost-b type="decimal" nil="true"/>
+<modify-constrained-project-details type="boolean">true</modify-constrained-project-details>
+<modify-from-unprogrammed-to-constrained type="boolean">false</modify-from-unprogrammed-to-constrained>
+<mtp-status>1</mtp-status>
+<new-project type="boolean">false</new-project>
+<planning-process>
+Yes the project is in the Comprehensive Plan under the transportation element as priority 14 Schuster Parkway Trail. The project is also part of the Capital Improvement Program.
+</planning-process>
+<primary-improvement-type-id type="integer">42</primary-improvement-type-id>
+<prioritization-a1a type="boolean" nil="true"/>
+<prioritization-a1b type="boolean" nil="true"/>
+<prioritization-a2a type="boolean" nil="true"/>
+<prioritization-a2b type="boolean" nil="true"/>
+<prioritization-a3 type="boolean" nil="true"/>
+<prioritization-a4 type="boolean" nil="true"/>
+<prioritization-a4-continued nil="true"/>
+<prioritization-c1a type="boolean" nil="true"/>
+<prioritization-c1c type="boolean" nil="true"/>
+<prioritization-c1d type="boolean" nil="true"/>
+<prioritization-c2a type="boolean" nil="true"/>
+<prioritization-c2b type="boolean" nil="true"/>
+<prioritization-c3 type="boolean" nil="true"/>
+<prioritization-c4 type="boolean" nil="true"/>
+<prioritization-c5 type="boolean" nil="true"/>
+<prioritization-f1 type="boolean" nil="true"/>
+<prioritization-f2 type="boolean" nil="true"/>
+<prioritization-f3 type="boolean" nil="true"/>
+<prioritization-f4a type="boolean" nil="true"/>
+<prioritization-f4b type="boolean" nil="true"/>
+<prioritization-f5 type="boolean" nil="true"/>
+<prioritization-f6 type="boolean" nil="true"/>
+<prioritization-j1a type="boolean" nil="true"/>
+<prioritization-j1b type="boolean" nil="true"/>
+<prioritization-j2 type="boolean" nil="true"/>
+<prioritization-j3 type="boolean" nil="true"/>
+<prioritization-j4 type="boolean" nil="true"/>
+<prioritization-m1 type="boolean" nil="true"/>
+<prioritization-m2 type="boolean" nil="true"/>
+<prioritization-m3 type="boolean" nil="true"/>
+<prioritization-m4 type="boolean" nil="true"/>
+<prioritization-m5 type="boolean" nil="true"/>
+<prioritization-m6 type="boolean" nil="true"/>
+<prioritization-m7 type="boolean" nil="true"/>
+<prioritization-o1 type="boolean" nil="true"/>
+<prioritization-o2a type="boolean" nil="true"/>
+<prioritization-o2b type="boolean" nil="true"/>
+<prioritization-o2c type="boolean" nil="true"/>
+<prioritization-o3a type="boolean" nil="true"/>
+<prioritization-o3b type="boolean" nil="true"/>
+<prioritization-o3c type="boolean" nil="true"/>
+<prioritization-s1a type="boolean" nil="true"/>
+<prioritization-s1b type="boolean" nil="true"/>
+<prioritization-s1c type="boolean" nil="true"/>
+<prioritization-s2 type="boolean" nil="true"/>
+<prioritization-t1 type="boolean" nil="true"/>
+<prioritization-t2 type="boolean" nil="true"/>
+<prioritization-t3 type="boolean" nil="true"/>
+<prioritization-t4 type="boolean" nil="true"/>
+<prioritization-w1a type="boolean" nil="true"/>
+<prioritization-w1b type="boolean" nil="true"/>
+<prioritization-w1c type="boolean" nil="true"/>
+<prioritization-w1d type="boolean" nil="true"/>
+<prioritization-w2 type="boolean" nil="true"/>
+<prioritization-w4a type="boolean" nil="true"/>
+<prioritization-w4b type="boolean" nil="true"/>
+<project-id type="integer">5514</project-id>
+<sponsoring-agency-id type="integer">112</sponsoring-agency-id>
+<start-year type="date">2015-01-01</start-year>
+<status>submitted</status>
+<submitted-at type="datetime">2015-03-25T13:51:48-07:00</submitted-at>
+<title>Schuster Parkway Trail</title>
+<total-cost type="decimal">10287330.0</total-cost>
+<updated-at type="datetime">2015-03-25T13:51:48-07:00</updated-at>
+<user-id type="integer">129</user-id>
+</mtp-project>
+<mtp-project>
+<accepted-at type="datetime" nil="true"/>
+<change-completion-year type="boolean" nil="true"/>
+<change-constant-dollar-year type="boolean" nil="true"/>
+<change-cosponsors type="boolean" nil="true"/>
+<change-description type="boolean" nil="true"/>
+<change-functional-class type="boolean" nil="true"/>
+<change-in-project-scope type="boolean" nil="true"/>
+<change-location-information type="boolean" nil="true"/>
+<change-mtp-status type="boolean" nil="true"/>
+<change-primary-improvement-type type="boolean" nil="true"/>
+<change-secondary-improvement-types type="boolean" nil="true"/>
+<change-sponsoring-agency type="boolean" nil="true"/>
+<change-title type="boolean" nil="true"/>
+<change-total-cost type="boolean" nil="true"/>
+<completion-year type="date">2015-01-01</completion-year>
+<constant-dollar-year type="date">2015-03-20</constant-dollar-year>
+<contact-email>jcowling@marysvillewa.gov</contact-email>
+<contact-first-name>John</contact-first-name>
+<contact-last-name>Cowling</contact-last-name>
+<contact-phone>360-363-8281</contact-phone>
+<county-id type="integer">5</county-id>
+<created-at type="datetime">2015-03-19T09:27:37-07:00</created-at>
+<description>
+Widening the segment of State Avenue between 116th Street NE and 136th Street NE from three lanes to five. Other elements include installation of sidewalk on the east side of the road, improvements to the “Arlington Spur” railroad crossing, and upgrade of the traffic signal at 128th Street NE.
+</description>
+<endpoint-a>116th St. NE</endpoint-a>
+<endpoint-b>136th St. NE</endpoint-b>
+<functional-class>14</functional-class>
+<funds-description>
+$3,000,000 in TIB funding $1,279,440 in Local funding
+</funds-description>
+<id type="integer">11</id>
+<letters-of-concurrence>Project is fully within the City of Marysville</letters-of-concurrence>
+<location>State Avenue</location>
+<milepost-a type="decimal" nil="true"/>
+<milepost-b type="decimal" nil="true"/>
+<modify-constrained-project-details type="boolean">false</modify-constrained-project-details>
+<modify-from-unprogrammed-to-constrained type="boolean">true</modify-from-unprogrammed-to-constrained>
+<mtp-status>NULL</mtp-status>
+<new-project type="boolean">false</new-project>
+<planning-process>
+Project is identified in the City of Marysville Transportation Comprehensive Plan as well as in the 6 year TIP
+</planning-process>
+<primary-improvement-type-id type="integer">3</primary-improvement-type-id>
+<prioritization-a1a type="boolean">false</prioritization-a1a>
+<prioritization-a1b type="boolean">false</prioritization-a1b>
+<prioritization-a2a type="boolean">true</prioritization-a2a>
+<prioritization-a2b type="boolean">true</prioritization-a2b>
+<prioritization-a3 type="boolean">false</prioritization-a3>
+<prioritization-a4 type="boolean">false</prioritization-a4>
+<prioritization-a4-continued/>
+<prioritization-c1a type="boolean" nil="true"/>
+<prioritization-c1c type="boolean" nil="true"/>
+<prioritization-c1d type="boolean">false</prioritization-c1d>
+<prioritization-c2a type="boolean">false</prioritization-c2a>
+<prioritization-c2b type="boolean">false</prioritization-c2b>
+<prioritization-c3 type="boolean">false</prioritization-c3>
+<prioritization-c4 type="boolean">false</prioritization-c4>
+<prioritization-c5 type="boolean">true</prioritization-c5>
+<prioritization-f1 type="boolean">false</prioritization-f1>
+<prioritization-f2 type="boolean">false</prioritization-f2>
+<prioritization-f3 type="boolean">false</prioritization-f3>
+<prioritization-f4a type="boolean">false</prioritization-f4a>
+<prioritization-f4b type="boolean">false</prioritization-f4b>
+<prioritization-f5 type="boolean">false</prioritization-f5>
+<prioritization-f6 type="boolean">false</prioritization-f6>
+<prioritization-j1a type="boolean">false</prioritization-j1a>
+<prioritization-j1b type="boolean">false</prioritization-j1b>
+<prioritization-j2 type="boolean">false</prioritization-j2>
+<prioritization-j3 type="boolean">false</prioritization-j3>
+<prioritization-j4 type="boolean">false</prioritization-j4>
+<prioritization-m1 type="boolean">true</prioritization-m1>
+<prioritization-m2 type="boolean">false</prioritization-m2>
+<prioritization-m3 type="boolean">true</prioritization-m3>
+<prioritization-m4 type="boolean">false</prioritization-m4>
+<prioritization-m5 type="boolean">true</prioritization-m5>
+<prioritization-m6 type="boolean">false</prioritization-m6>
+<prioritization-m7 type="boolean">false</prioritization-m7>
+<prioritization-o1 type="boolean">true</prioritization-o1>
+<prioritization-o2a type="boolean">true</prioritization-o2a>
+<prioritization-o2b type="boolean" nil="true"/>
+<prioritization-o2c type="boolean" nil="true"/>
+<prioritization-o3a type="boolean" nil="true"/>
+<prioritization-o3b type="boolean">true</prioritization-o3b>
+<prioritization-o3c type="boolean" nil="true"/>
+<prioritization-s1a type="boolean">true</prioritization-s1a>
+<prioritization-s1b type="boolean">true</prioritization-s1b>
+<prioritization-s1c type="boolean">true</prioritization-s1c>
+<prioritization-s2 type="boolean">false</prioritization-s2>
+<prioritization-t1 type="boolean">true</prioritization-t1>
+<prioritization-t2 type="boolean">true</prioritization-t2>
+<prioritization-t3 type="boolean">true</prioritization-t3>
+<prioritization-t4 type="boolean">true</prioritization-t4>
+<prioritization-w1a type="boolean" nil="true"/>
+<prioritization-w1b type="boolean">true</prioritization-w1b>
+<prioritization-w1c type="boolean" nil="true"/>
+<prioritization-w1d type="boolean" nil="true"/>
+<prioritization-w2 type="boolean">true</prioritization-w2>
+<prioritization-w4a type="boolean">false</prioritization-w4a>
+<prioritization-w4b type="boolean">false</prioritization-w4b>
+<project-id type="integer">4124</project-id>
+<sponsoring-agency-id type="integer">60</sponsoring-agency-id>
+<start-year type="date">2015-01-01</start-year>
+<status>submitted</status>
+<submitted-at type="datetime">2015-03-20T08:18:39-07:00</submitted-at>
+<title>State Ave. 116th St. NE to 136th St. NE</title>
+<total-cost type="decimal">4279440.0</total-cost>
+<updated-at type="datetime">2015-03-20T08:18:39-07:00</updated-at>
+<user-id type="integer">63</user-id>
+</mtp-project>
+<mtp-project>
+<accepted-at type="datetime" nil="true"/>
+<change-completion-year type="boolean">true</change-completion-year>
+<change-constant-dollar-year type="boolean">true</change-constant-dollar-year>
+<change-cosponsors type="boolean" nil="true"/>
+<change-description type="boolean">true</change-description>
+<change-functional-class type="boolean">true</change-functional-class>
+<change-in-project-scope type="boolean">false</change-in-project-scope>
+<change-location-information type="boolean">true</change-location-information>
+<change-mtp-status type="boolean" nil="true"/>
+<change-primary-improvement-type type="boolean">true</change-primary-improvement-type>
+<change-secondary-improvement-types type="boolean">false</change-secondary-improvement-types>
+<change-sponsoring-agency type="boolean" nil="true"/>
+<change-title type="boolean" nil="true"/>
+<change-total-cost type="boolean">true</change-total-cost>
+<completion-year type="date">2025-01-01</completion-year>
+<constant-dollar-year type="date">2022-03-18</constant-dollar-year>
+<contact-email>martila@wsdot.wa.gov</contact-email>
+<contact-first-name>Lance</contact-first-name>
+<contact-last-name>Martin</contact-last-name>
+<contact-phone>206.440.4745</contact-phone>
+<county-id type="integer">5</county-id>
+<created-at type="datetime">2015-03-18T10:47:18-07:00</created-at>
+<description>
+Construct improvements to SR 526 to improve safety and provide congestion relief such as peak shoulder use and intersection improvements.
+</description>
+<endpoint-a>N/A</endpoint-a>
+<endpoint-b>N/A</endpoint-b>
+<functional-class>14</functional-class>
+<funds-description>
+Project funding is all new revenue, as currently proposed by the state legislature. The new revenue proposal was passed by the Senate in the current legislative session.
+</funds-description>
+<id type="integer">10</id>
+<letters-of-concurrence>
+This project will be done in coordination with the City of Everett.
+</letters-of-concurrence>
+<location>Everett</location>
+<milepost-a type="decimal">0.0</milepost-a>
+<milepost-b type="decimal">4.5</milepost-b>
+<modify-constrained-project-details type="boolean">true</modify-constrained-project-details>
+<modify-from-unprogrammed-to-constrained type="boolean">false</modify-from-unprogrammed-to-constrained>
+<mtp-status>0</mtp-status>
+<new-project type="boolean">false</new-project>
+<planning-process>
+This project is included in WSDOT's capital improvement program.
+</planning-process>
+<primary-improvement-type-id type="integer">19</primary-improvement-type-id>
+<prioritization-a1a type="boolean">false</prioritization-a1a>
+<prioritization-a1b type="boolean">false</prioritization-a1b>
+<prioritization-a2a type="boolean">false</prioritization-a2a>
+<prioritization-a2b type="boolean">false</prioritization-a2b>
+<prioritization-a3 type="boolean">false</prioritization-a3>
+<prioritization-a4 type="boolean">false</prioritization-a4>
+<prioritization-a4-continued/>
+<prioritization-c1a type="boolean">false</prioritization-c1a>
+<prioritization-c1c type="boolean">false</prioritization-c1c>
+<prioritization-c1d type="boolean">false</prioritization-c1d>
+<prioritization-c2a type="boolean">false</prioritization-c2a>
+<prioritization-c2b type="boolean">false</prioritization-c2b>
+<prioritization-c3 type="boolean">false</prioritization-c3>
+<prioritization-c4 type="boolean">false</prioritization-c4>
+<prioritization-c5 type="boolean">false</prioritization-c5>
+<prioritization-f1 type="boolean">false</prioritization-f1>
+<prioritization-f2 type="boolean">false</prioritization-f2>
+<prioritization-f3 type="boolean">false</prioritization-f3>
+<prioritization-f4a type="boolean">false</prioritization-f4a>
+<prioritization-f4b type="boolean">false</prioritization-f4b>
+<prioritization-f5 type="boolean">false</prioritization-f5>
+<prioritization-f6 type="boolean">false</prioritization-f6>
+<prioritization-j1a type="boolean">false</prioritization-j1a>
+<prioritization-j1b type="boolean">false</prioritization-j1b>
+<prioritization-j2 type="boolean">false</prioritization-j2>
+<prioritization-j3 type="boolean">false</prioritization-j3>
 <prioritization-j4 type="boolean">false</prioritization-j4>
 <prioritization-m1 type="boolean">false</prioritization-m1>
 <prioritization-m2 type="boolean">false</prioritization-m2>
@@ -78,32 +641,141 @@ Prioritization Form test, replicating the responses for MTPID 112 during the 201
 <prioritization-o2a type="boolean">false</prioritization-o2a>
 <prioritization-o2b type="boolean">false</prioritization-o2b>
 <prioritization-o2c type="boolean">false</prioritization-o2c>
-<prioritization-o3a type="boolean">true</prioritization-o3a>
-<prioritization-o3b type="boolean">true</prioritization-o3b>
-<prioritization-o3c type="boolean">true</prioritization-o3c>
-<prioritization-s1a type="boolean">true</prioritization-s1a>
-<prioritization-s1b type="boolean">true</prioritization-s1b>
-<prioritization-s1c type="boolean" nil="true"/>
-<prioritization-s2 type="boolean">true</prioritization-s2>
-<prioritization-t1 type="boolean">true</prioritization-t1>
+<prioritization-o3a type="boolean">false</prioritization-o3a>
+<prioritization-o3b type="boolean">false</prioritization-o3b>
+<prioritization-o3c type="boolean">false</prioritization-o3c>
+<prioritization-s1a type="boolean">false</prioritization-s1a>
+<prioritization-s1b type="boolean">false</prioritization-s1b>
+<prioritization-s1c type="boolean">false</prioritization-s1c>
+<prioritization-s2 type="boolean">false</prioritization-s2>
+<prioritization-t1 type="boolean">false</prioritization-t1>
 <prioritization-t2 type="boolean">false</prioritization-t2>
 <prioritization-t3 type="boolean">false</prioritization-t3>
 <prioritization-t4 type="boolean">false</prioritization-t4>
-<prioritization-w1a type="boolean">true</prioritization-w1a>
-<prioritization-w1b type="boolean" nil="true"/>
-<prioritization-w1c type="boolean">true</prioritization-w1c>
-<prioritization-w1d type="boolean">true</prioritization-w1d>
-<prioritization-w2 type="boolean">true</prioritization-w2>
-<prioritization-w4a type="boolean">true</prioritization-w4a>
-<prioritization-w4b type="boolean">true</prioritization-w4b>
-<project-id type="integer">-9999</project-id>
-<sponsoring-agency-id type="integer">172</sponsoring-agency-id>
-<start-year type="date">2015-01-01</start-year>
+<prioritization-w1a type="boolean">false</prioritization-w1a>
+<prioritization-w1b type="boolean">false</prioritization-w1b>
+<prioritization-w1c type="boolean">false</prioritization-w1c>
+<prioritization-w1d type="boolean">false</prioritization-w1d>
+<prioritization-w2 type="boolean">false</prioritization-w2>
+<prioritization-w4a type="boolean">false</prioritization-w4a>
+<prioritization-w4b type="boolean">false</prioritization-w4b>
+<project-id type="integer">5260</project-id>
+<sponsoring-agency-id type="integer">149</sponsoring-agency-id>
+<start-year type="date">2017-01-01</start-year>
 <status>submitted</status>
-<submitted-at type="datetime">2015-04-01T12:20:25-07:00</submitted-at>
-<title>Prioritization Form Test</title>
-<total-cost type="decimal">1.0</total-cost>
-<updated-at type="datetime">2015-04-01T12:20:25-07:00</updated-at>
-<user-id type="integer">1</user-id>
+<submitted-at type="datetime">2015-03-27T07:58:30-07:00</submitted-at>
+<title>SR 526 Corridor Safety & Capacity Improvements</title>
+<total-cost type="decimal">47200000.0</total-cost>
+<updated-at type="datetime">2015-03-27T07:58:30-07:00</updated-at>
+<user-id type="integer">153</user-id>
+</mtp-project>
+<mtp-project>
+<accepted-at type="datetime" nil="true"/>
+<change-completion-year type="boolean">true</change-completion-year>
+<change-constant-dollar-year type="boolean">true</change-constant-dollar-year>
+<change-cosponsors type="boolean" nil="true"/>
+<change-description type="boolean">false</change-description>
+<change-functional-class type="boolean">false</change-functional-class>
+<change-in-project-scope type="boolean">false</change-in-project-scope>
+<change-location-information type="boolean">false</change-location-information>
+<change-mtp-status type="boolean" nil="true"/>
+<change-primary-improvement-type type="boolean">false</change-primary-improvement-type>
+<change-secondary-improvement-types type="boolean">false</change-secondary-improvement-types>
+<change-sponsoring-agency type="boolean" nil="true"/>
+<change-title type="boolean" nil="true"/>
+<change-total-cost type="boolean">true</change-total-cost>
+<completion-year type="date">2020-01-01</completion-year>
+<constant-dollar-year type="date">2020-03-18</constant-dollar-year>
+<contact-email>martila@wsdot.wa.gov</contact-email>
+<contact-first-name>Lance</contact-first-name>
+<contact-last-name>Martin</contact-last-name>
+<contact-phone>206.440.4745</contact-phone>
+<county-id type="integer" nil="true"/>
+<created-at type="datetime">2015-03-18T10:02:22-07:00</created-at>
+<description nil="true"/>
+<endpoint-a nil="true"/>
+<endpoint-b nil="true"/>
+<functional-class nil="true"/>
+<funds-description>
+$500,000, funded by Federal STP and state funds, was previously authorized for a traffic study; $229,406 was actually expended.
+</funds-description>
+<id type="integer">9</id>
+<letters-of-concurrence>Concurrence was given by the City of Lake Stevens.</letters-of-concurrence>
+<location nil="true"/>
+<milepost-a type="decimal" nil="true"/>
+<milepost-b type="decimal" nil="true"/>
+<modify-constrained-project-details type="boolean">true</modify-constrained-project-details>
+<modify-from-unprogrammed-to-constrained type="boolean">false</modify-from-unprogrammed-to-constrained>
+<mtp-status>1</mtp-status>
+<new-project type="boolean">false</new-project>
+<planning-process>
+The project is included in WSDOT's approved capital improvement program and was developed under a pre-design study done by WSDOT in September 2012.
+</planning-process>
+<primary-improvement-type-id type="integer" nil="true"/>
+<prioritization-a1a type="boolean" nil="true"/>
+<prioritization-a1b type="boolean" nil="true"/>
+<prioritization-a2a type="boolean" nil="true"/>
+<prioritization-a2b type="boolean" nil="true"/>
+<prioritization-a3 type="boolean" nil="true"/>
+<prioritization-a4 type="boolean" nil="true"/>
+<prioritization-a4-continued nil="true"/>
+<prioritization-c1a type="boolean" nil="true"/>
+<prioritization-c1c type="boolean" nil="true"/>
+<prioritization-c1d type="boolean" nil="true"/>
+<prioritization-c2a type="boolean" nil="true"/>
+<prioritization-c2b type="boolean" nil="true"/>
+<prioritization-c3 type="boolean" nil="true"/>
+<prioritization-c4 type="boolean" nil="true"/>
+<prioritization-c5 type="boolean" nil="true"/>
+<prioritization-f1 type="boolean" nil="true"/>
+<prioritization-f2 type="boolean" nil="true"/>
+<prioritization-f3 type="boolean" nil="true"/>
+<prioritization-f4a type="boolean" nil="true"/>
+<prioritization-f4b type="boolean" nil="true"/>
+<prioritization-f5 type="boolean" nil="true"/>
+<prioritization-f6 type="boolean" nil="true"/>
+<prioritization-j1a type="boolean" nil="true"/>
+<prioritization-j1b type="boolean" nil="true"/>
+<prioritization-j2 type="boolean" nil="true"/>
+<prioritization-j3 type="boolean" nil="true"/>
+<prioritization-j4 type="boolean" nil="true"/>
+<prioritization-m1 type="boolean" nil="true"/>
+<prioritization-m2 type="boolean" nil="true"/>
+<prioritization-m3 type="boolean" nil="true"/>
+<prioritization-m4 type="boolean" nil="true"/>
+<prioritization-m5 type="boolean" nil="true"/>
+<prioritization-m6 type="boolean" nil="true"/>
+<prioritization-m7 type="boolean" nil="true"/>
+<prioritization-o1 type="boolean" nil="true"/>
+<prioritization-o2a type="boolean" nil="true"/>
+<prioritization-o2b type="boolean" nil="true"/>
+<prioritization-o2c type="boolean" nil="true"/>
+<prioritization-o3a type="boolean" nil="true"/>
+<prioritization-o3b type="boolean" nil="true"/>
+<prioritization-o3c type="boolean" nil="true"/>
+<prioritization-s1a type="boolean" nil="true"/>
+<prioritization-s1b type="boolean" nil="true"/>
+<prioritization-s1c type="boolean" nil="true"/>
+<prioritization-s2 type="boolean" nil="true"/>
+<prioritization-t1 type="boolean" nil="true"/>
+<prioritization-t2 type="boolean" nil="true"/>
+<prioritization-t3 type="boolean" nil="true"/>
+<prioritization-t4 type="boolean" nil="true"/>
+<prioritization-w1a type="boolean" nil="true"/>
+<prioritization-w1b type="boolean" nil="true"/>
+<prioritization-w1c type="boolean" nil="true"/>
+<prioritization-w1d type="boolean" nil="true"/>
+<prioritization-w2 type="boolean" nil="true"/>
+<prioritization-w4a type="boolean" nil="true"/>
+<prioritization-w4b type="boolean" nil="true"/>
+<project-id type="integer">4413</project-id>
+<sponsoring-agency-id type="integer">149</sponsoring-agency-id>
+<start-year type="date">2016-01-01</start-year>
+<status>submitted</status>
+<submitted-at type="datetime">2015-03-26T10:20:24-07:00</submitted-at>
+<title>SR 9 @ SR 204 Intersection Improvement</title>
+<total-cost type="decimal">68900000.0</total-cost>
+<updated-at type="datetime">2015-03-26T10:20:24-07:00</updated-at>
+<user-id type="integer">153</user-id>
 </mtp-project>
 </mtp-projects>

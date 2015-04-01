@@ -10,7 +10,11 @@ class PlanProject
     c = node.children
     @mtpid = c.css('project-id').first.content.to_i
     @title = c.css('title').first.content
+    @title.gsub!("'",'`')
+    @title.gsub!('"','`')
     @description = c.css('description').first.content
+    @description.gsub!("'",'`')
+    @description.gsub!('"','`')
     @tot_proj_cost = c.css('total-cost').first.content.to_i
     contact_first_name = c.css('contact-first-name').first.content
     contact_last_name = c.css('contact-last-name').first.content
@@ -25,8 +29,9 @@ class PlanProject
     @project_to = c.css('endpoint-b').first.content
     @mile_post_from = c.css('milepost-a').first.content.empty? ? 'NULL' : c.css('milepost-a').first.content
     @mile_post_to = c.css('milepost-b').first.content.empty? ? 'NULL' : c.css('milepost-b').first.content
+    @county_id = c.css('county-id').first.content.empty? ? 'NULL' : c.css('county-id').first.content
     @func_class_id = c.css('functional-class').first.content.empty? ? 'NULL' : c.css('functional-class').first.content
-    @start_year = c.css('start-year').first.content
+    @start_year = c.css('start-year').first.content[0,4]
     @p_a1a = c.css('prioritization-a1a').first.content == 'true' ? 1 : 0
     @p_a1b = c.css("prioritization-a1b").first.content == 'true' ? 1 : 0
     @p_a2a = c.css("prioritization-a2a").first.content== 'true'  ? 1 : 0
@@ -88,64 +93,35 @@ class PlanProject
     #create an input query and fire it off to SQL Server via shell command
     db = 'MTPData_dev'
 
-    command = <<-COMMAND
-    SQLCMD -S SQL2008\\\PSRCSQL -E -d #{db} -Q 
-    COMMAND
+    command = "SQLCMD -S SQL2008\\\PSRCSQL -E -d #{db} -Q"
 
 
     @qry = <<-QUERY 
-    "INSERT INTO tblStageProject (MTPID, Title, ProjDesc, TotProjCost,
-    ContactName, ContactPhone, ContactEmail, EstCostYear,
-    CompletionYear, MTPStatus, ProjectOn, ProjectFrom,
-    ProjectTo, MilePostFrom, MilePostTo, FuncClassiD,
-    StartYear)
-    VALUES (#{@mtpid},'#{@title}','#{@description}',#{@tot_proj_cost},
+    "EXEC mtpsp_ImportToStaging
+    #{@mtpid},'#{@title}','#{@description}',#{@tot_proj_cost},
     '#{@contact_name}','#{@contact_phone}','#{@contact_email}',#{@est_cost_year},
     #{@completion_year},#{@mtp_status},'#{@project_on}','#{@project_from}',
-    '#{@project_to}',#{@mile_post_from},#{@mile_post_to},#{@func_class_id},
-    #{@start_year})"
+    '#{@project_to}',#{@mile_post_from},#{@mile_post_to},#{@county_id},
+    #{@func_class_id},
+    #{@start_year},#{@p_a1a},#{@p_a1b},#{@p_a2a},#{@p_a2b},#{@p_a3},#{@p_a4},
+    #{@p_c1a},#{@p_c1b},#{@p_c1c},#{@p_c2a},#{@p_c2b},#{@p_c3},#{@p_c4},#{@p_c5},
+    #{@p_f1},#{@p_f2}, #{@p_f3},#{@p_f4a},#{@p_f4b},#{@p_f5},#{@p_f6},
+    #{@p_j1a},#{@p_j1b},#{@p_j2}, #{@p_j3},#{@p_j4},
+    #{@p_m1},#{@p_m2},#{@p_m3},#{@p_m4},#{@p_m5},#{@p_m6},#{@p_m7},
+    #{@p_o1},#{@p_o2a},#{@p_o2b},#{@p_o2c},#{@p_o3a},#{@p_o3b},#{@p_o3c},
+    #{@p_s1a},#{@p_s1b},#{@p_s1c},#{@p_s2},
+    #{@p_t1},#{@p_t2},#{@p_t3},#{@p_t4},
+    #{@p_w1a},#{@p_w1b},#{@p_w1c},#{@p_w1d},#{@p_w2},#{@p_w4a},#{@p_w4b}"
     QUERY
     
-
-    @prioritization_qry = <<-PQUERY
-    "INSERT INTO tblStagePrioritization 
-      (MTPID, a1a, a1b,  a2a, a2b, a3, a4, 
-      c1a, c1b, c1c, c2a, c2b, c3, c4, c5, 
-      f1, f2, f3, f4a,  f4b, f5, f6, 
-      j1a, j1b, j2, j3, j4, 
-      m1, m2, m3, m4, m5, m6, m7, 
-      o1, o2a, o2b, o2c, o3a, o3b, o3c, 
-      s1a, s1b, s1c, s2, 
-      t1, t2, t3, t4, 
-      w1a, w1b, w1c, w1d, w2, w4a, w4b )
-    VALUES
-    (
-      #{mtpid},#{@p_a1a},#{@p_a1b},#{@p_a2a},#{@p_a2b},#{@p_a3},#{@p_a4},
-      #{@p_c1a},#{@p_c1b},#{@p_c1c},#{@p_c2a},#{@p_c2b},#{@p_c3},#{@p_c4},#{@p_c5},
-      #{@p_f1},#{@p_f2}, #{@p_f3},#{@p_f4a},#{@p_f4b},#{@p_f5},#{@p_f6},
-      #{@p_j1a},#{@p_j1b},#{@p_j2}, #{@p_j3},#{@p_j4},
-      #{@p_m1},#{@p_m2},#{@p_m3},#{@p_m4},#{@p_m5},#{@p_m6},#{@p_m7},
-      #{@p_o1},#{@p_o2a},#{@p_o2b},#{@p_o2c},#{@p_o3a},#{@p_o3b},#{@p_o3c},
-      #{@p_s1a},#{@p_s1b},#{@p_s1c},#{@p_s2},
-      #{@p_t1},#{@p_t2},#{@p_t3},#{@p_t4},
-      #{@p_w1a},#{@p_w1b},#{@p_w1c},#{@p_w1d},#{@p_w2},#{@p_w4a},#{@p_w4b}
-    )"                                        
-    PQUERY
-
     combined_command = command + ' ' + @qry
     combined_command.gsub!(/\n/,' ')
-    combined_prioritization_query = (command + ' ' + @prioritization_qry).gsub(/\n/,' ')
 
-    #combined_command.gsub!(/,,,/,',NULL,NULL,')
-    
-    #puts combined_command
-    #3.times {puts ""}
-    File.open('mtp_project_out.txt', 'a') {|file| file.write("\n#{combined_prioritization_query}\n")}
+    File.open('mtp_project_out.txt', 'a') {|file| file.write("\n#{combined_command}\n")}
 
     `#{combined_command}`
 
     #puts @prioritization_qry
-    `#{combined_prioritization_query}`
 
     puts "Added project #{mtpid} to staging tables."
   end 
@@ -166,10 +142,7 @@ class Submissions
     item_nodes = @xml_doc.xpath('//mtp-projects/mtp-project')
     projects = []
     item_nodes.each do |node|
-      #puts "node class = #{node.class}"
       proj = PlanProject.new(node)
-      #projects<< node
-      #projects<< node.children.css('project-id')
       projects<< proj
     end
     projects
