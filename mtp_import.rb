@@ -90,40 +90,46 @@ class PlanProject
   end
   
   def send_to_db
-    #create an input query and fire it off to SQL Server via shell command
-    db = 'MTPData_dev'
+    begin
+      #create an input query and fire it off to SQL Server via shell command
+      db = 'MTPData_dev'
 
-    command = "SQLCMD -S SQL2008\\\PSRCSQL -E -d #{db} -Q"
+      command = "SQLCMD -S SQL2008\\\PSRCSQL -E -d #{db} -Q"
 
 
-    @qry = <<-QUERY 
-    "EXEC mtpsp_ImportToStaging
-    #{@mtpid},'#{@title}','#{@description}',#{@tot_proj_cost},
-    '#{@contact_name}','#{@contact_phone}','#{@contact_email}',#{@est_cost_year},
-    #{@completion_year},#{@mtp_status},'#{@project_on}','#{@project_from}',
-    '#{@project_to}',#{@mile_post_from},#{@mile_post_to},#{@county_id},
-    #{@func_class_id},
-    #{@start_year},#{@p_a1a},#{@p_a1b},#{@p_a2a},#{@p_a2b},#{@p_a3},#{@p_a4},
-    #{@p_c1a},#{@p_c1b},#{@p_c1c},#{@p_c2a},#{@p_c2b},#{@p_c3},#{@p_c4},#{@p_c5},
-    #{@p_f1},#{@p_f2}, #{@p_f3},#{@p_f4a},#{@p_f4b},#{@p_f5},#{@p_f6},
-    #{@p_j1a},#{@p_j1b},#{@p_j2}, #{@p_j3},#{@p_j4},
-    #{@p_m1},#{@p_m2},#{@p_m3},#{@p_m4},#{@p_m5},#{@p_m6},#{@p_m7},
-    #{@p_o1},#{@p_o2a},#{@p_o2b},#{@p_o2c},#{@p_o3a},#{@p_o3b},#{@p_o3c},
-    #{@p_s1a},#{@p_s1b},#{@p_s1c},#{@p_s2},
-    #{@p_t1},#{@p_t2},#{@p_t3},#{@p_t4},
-    #{@p_w1a},#{@p_w1b},#{@p_w1c},#{@p_w1d},#{@p_w2},#{@p_w4a},#{@p_w4b}"
-    QUERY
-    
-    combined_command = command + ' ' + @qry
-    combined_command.gsub!(/\n/,' ')
+      @qry = <<-QUERY 
+      "EXEC mtpsp_ImportToStaging
+      #{@mtpid},'#{@title}','#{@description}',#{@tot_proj_cost},
+      '#{@contact_name}','#{@contact_phone}','#{@contact_email}',#{@est_cost_year},
+      #{@completion_year},#{@mtp_status},'#{@project_on}','#{@project_from}',
+      '#{@project_to}',#{@mile_post_from},#{@mile_post_to},#{@county_id},
+      #{@func_class_id},
+      #{@start_year},#{@p_a1a},#{@p_a1b},#{@p_a2a},#{@p_a2b},#{@p_a3},#{@p_a4},
+      #{@p_c1a},#{@p_c1b},#{@p_c1c},#{@p_c2a},#{@p_c2b},#{@p_c3},#{@p_c4},#{@p_c5},
+      #{@p_f1},#{@p_f2}, #{@p_f3},#{@p_f4a},#{@p_f4b},#{@p_f5},#{@p_f6},
+      #{@p_j1a},#{@p_j1b},#{@p_j2}, #{@p_j3},#{@p_j4},
+      #{@p_m1},#{@p_m2},#{@p_m3},#{@p_m4},#{@p_m5},#{@p_m6},#{@p_m7},
+      #{@p_o1},#{@p_o2a},#{@p_o2b},#{@p_o2c},#{@p_o3a},#{@p_o3b},#{@p_o3c},
+      #{@p_s1a},#{@p_s1b},#{@p_s1c},#{@p_s2},
+      #{@p_t1},#{@p_t2},#{@p_t3},#{@p_t4},
+      #{@p_w1a},#{@p_w1b},#{@p_w1c},#{@p_w1d},#{@p_w2},#{@p_w4a},#{@p_w4b}" -r
+      QUERY
+      
+      combined_command = command + ' ' + @qry
+      combined_command.gsub!(/\n/,' ')
 
-    File.open('mtp_project_out.txt', 'a') {|file| file.write("\n#{combined_command}\n")}
+      File.open('mtp_project_out.txt', 'a') {|file| file.write("\n#{combined_command}\n")}
 
-    `#{combined_command}`
+      query_output = `#{combined_command}`
+      raise 'An error occured in PlanProject.send_to_db.' if query_output.empty?
+      #puts $?.success?
+      #puts @prioritization_qry
 
-    #puts @prioritization_qry
-
-    puts "Added project #{mtpid} to staging tables."
+      puts "Added project #{mtpid} to staging tables."
+    rescue Exception => e
+      puts e.message
+      puts e.backtrace.inspect
+    end
   end 
 end
 
