@@ -89,15 +89,10 @@ class PlanProject
     @p_w4b = c.css("prioritization-w4b").first.content == 'true' ? 1 : 0
   end
   
-  def send_to_db
+  def import_qry
+
     begin
-      #create an input query and fire it off to SQL Server via shell command
-      db = 'MTPData_dev'
-
-      command = "SQLCMD -S SQL2008\\\PSRCSQL -E -d #{db} -Q"
-
-
-      @qry = <<-QUERY 
+      qry = <<-QUERY 
       "EXEC mtpsp_ImportToStaging
       #{@mtpid},'#{@title}','#{@description}',#{@tot_proj_cost},
       '#{@contact_name}','#{@contact_phone}','#{@contact_email}',#{@est_cost_year},
@@ -112,25 +107,15 @@ class PlanProject
       #{@p_o1},#{@p_o2a},#{@p_o2b},#{@p_o2c},#{@p_o3a},#{@p_o3b},#{@p_o3c},
       #{@p_s1a},#{@p_s1b},#{@p_s1c},#{@p_s2},
       #{@p_t1},#{@p_t2},#{@p_t3},#{@p_t4},
-      #{@p_w1a},#{@p_w1b},#{@p_w1c},#{@p_w1d},#{@p_w2},#{@p_w4a},#{@p_w4b}" -r
+      #{@p_w1a},#{@p_w1b},#{@p_w1c},#{@p_w1d},#{@p_w2},#{@p_w4a},#{@p_w4b}"
       QUERY
       
-      combined_command = command + ' ' + @qry
-      combined_command.gsub!(/\n/,' ')
-
-      File.open('mtp_project_out.txt', 'a') {|file| file.write("\n#{combined_command}\n")}
-
-      query_output = `#{combined_command}`
-      raise 'An error occured in PlanProject.send_to_db.' if query_output.empty?
-      #puts $?.success?
-      #puts @prioritization_qry
-
-      puts "Added project #{mtpid} to staging tables."
     rescue Exception => e
       puts e.message
       puts e.backtrace.inspect
     end
   end 
+
 end
 
 class Submissions
@@ -173,8 +158,46 @@ class ImportFile
   
 end 
 
+class DbConn
+
+  def initialize(db)
+    @connection = "SQLCMD -S SQL2008\\\PSRCSQL -E -d #{db} -r -Q "
+  end
+
+  def clear_staging_tables
+    begin
+      # Clear data from the staging tables
+      cmd_delete = @connection + '"EXEC mtpsp_DeleteFromStagingTables"'
+      sproc_output = `#{cmd_delete}`
+      raise 'An error occurred in DbConn.clear_staging_tables' if sproc_output.empty?
+    rescue Exception => e
+      puts e.message
+      puts e.backtrace.inspect
+      File.open('mtp_project_out.txt', 'a') {|file| file.write("\n#{cmd_delete}\n")}
+    end
+  end
+
+  def execute_query(qry)
+    begin
+      combined_command = @connection + qry
+      combined_command.gsub!(/\n/,' ')
+      query_output = `#{combined_command}`
+      raise "An error occurred in DbConn.execute_query: #{qry}" if query_output.empty?
+    rescue Exception => e
+      puts e.message
+      puts e.backtrace.inspect
+      File.open('mtp_project_out.txt', 'a') {|file| file.write("\nFAILED QUERY: #{combined_command}\n")}
+    end
+  end
+end
+
 
 mtp_submissions = Submissions.new('mtp_projects.xml'); nil;
+conn = DbConn.new('MTPData_dev')
+conn.clear_staging_tables
 p = mtp_submissions.parse; nil;
-p.each {|project| project.send_to_db}
-#puts p[0].qry
+p.each do |project|
+  q = project.import_qry
+  conn.execute_query(q)
+  puts "imported project #{project.mtpid}"
+end
