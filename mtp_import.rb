@@ -1,10 +1,6 @@
 class PlanProject
   require 'nokogiri'
-  attr :mtpid, :title, :description, :tot_proj_cost, :contact_first_name
-  attr :contact_name, :contact_phone, :contact_email, :est_cost_year
-  attr :completion_year, :mtp_status, :project_on, :project_from
-  attr :project_to, :mile_post_from, :mile_post_to, :func_class_id
-  attr :start_year, :qry
+  attr :mtpid 
   
   def initialize(node)
     c = node.children
@@ -93,7 +89,7 @@ class PlanProject
 
     begin
       qry = <<-QUERY 
-      "EXEC mtpsp_ImportToStaging
+      EXEC mtpsp_ImportToStaging
       #{@mtpid},'#{@title}','#{@description}',#{@tot_proj_cost},
       '#{@contact_name}','#{@contact_phone}','#{@contact_email}',#{@est_cost_year},
       #{@completion_year},#{@mtp_status},'#{@project_on}','#{@project_from}',
@@ -107,7 +103,7 @@ class PlanProject
       #{@p_o1},#{@p_o2a},#{@p_o2b},#{@p_o2c},#{@p_o3a},#{@p_o3b},#{@p_o3c},
       #{@p_s1a},#{@p_s1b},#{@p_s1c},#{@p_s2},
       #{@p_t1},#{@p_t2},#{@p_t3},#{@p_t4},
-      #{@p_w1a},#{@p_w1b},#{@p_w1c},#{@p_w1d},#{@p_w2},#{@p_w4a},#{@p_w4b}"
+      #{@p_w1a},#{@p_w1b},#{@p_w1c},#{@p_w1d},#{@p_w2},#{@p_w4a},#{@p_w4b}
       QUERY
       
     rescue Exception => e
@@ -140,23 +136,6 @@ class Submissions
   end
 end
 
-class ImportFile
-  
-  def initialize(filepath)
-    submissions = Submissions.new(filepath)
-    projects = submissions.parse
-    send_to_db(projects)
-  end
-  
-  def send_to_db(projects)
-    # import each project in projects to the db
-    projects.each do |project|
-      project.send_to_db
-    end 
-  end 
-  
-  
-end 
 
 class DbConn
 
@@ -164,22 +143,10 @@ class DbConn
     @connection = "SQLCMD -S SQL2008\\\PSRCSQL -E -d #{db} -r -Q "
   end
 
-  def clear_staging_tables
-    begin
-      # Clear data from the staging tables
-      cmd_delete = @connection + '"EXEC mtpsp_DeleteFromStagingTables"'
-      sproc_output = `#{cmd_delete}`
-      raise 'An error occurred in DbConn.clear_staging_tables' if sproc_output.empty?
-    rescue Exception => e
-      puts e.message
-      puts e.backtrace.inspect
-      File.open('mtp_project_out.txt', 'a') {|file| file.write("\n#{cmd_delete}\n")}
-    end
-  end
 
   def execute_query(qry)
     begin
-      combined_command = @connection + qry
+      combined_command = @connection + "\"" + qry + "\""
       combined_command.gsub!(/\n/,' ')
       query_output = `#{combined_command}`
       raise "An error occurred in DbConn.execute_query: #{qry}" if query_output.empty?
@@ -189,15 +156,17 @@ class DbConn
       File.open('mtp_project_out.txt', 'a') {|file| file.write("\nFAILED QUERY: #{combined_command}\n")}
     end
   end
+
 end
 
 
 mtp_submissions = Submissions.new('mtp_projects.xml'); nil;
 conn = DbConn.new('MTPData_dev')
-conn.clear_staging_tables
+conn.execute_query('EXEC mtpsp_DeleteFromStagingTables')
 p = mtp_submissions.parse; nil;
 p.each do |project|
   q = project.import_qry
   conn.execute_query(q)
   puts "imported project #{project.mtpid}"
 end
+conn.execute_query('mtpsp_StageToReview 14')
