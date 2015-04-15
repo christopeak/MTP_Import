@@ -9,6 +9,8 @@ class PlanProject
   end
 
   def initialize(node)
+    #testtest
+
     c = node.children
     @mtpid = c.css('project-id').first.content.to_i
     @title = c.css('title').first.content
