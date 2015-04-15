@@ -1,4 +1,7 @@
-class PlanProject
+
+require_relative 'Project'
+
+class PlanProject < Project
   require 'nokogiri'
   attr :mtpid, :secondary_improvement_types
   
@@ -9,6 +12,7 @@ class PlanProject
   end
 
   def initialize(node)
+    self.set_vars
     c = node.children
     @mtpid = c.css('project-id').first.content.to_i
     @title = c.css('title').first.content
@@ -164,7 +168,6 @@ class DbConn
     @connection = "SQLCMD -S SQL2008\\\PSRCSQL -E -d #{db} -r -Q "
   end
 
-
   def execute_query(qry)
     begin
       combined_command = @connection + "\"" + qry + "\""
@@ -188,10 +191,10 @@ p = mtp_submissions.parse; nil;
 p.each do |project|
   q = project.import_qry
   # File.open('mtp_project_out.txt', 'a') {|file| file.write("\nQUERY: #{q}\n")}
-  conn.execute_query(q)
+  #conn.execute_query(q)
   secondary_improvement_type_query = project.secondary_improvement_type_query
   # File.open('mtp_project_out.txt', 'a') {|file| file.write("\nImp Type QUERY: #{secondary_improvement_type_query}\n")}
-  conn.execute_query(secondary_improvement_type_query) if project.secondary_improvement_types.length > 0
+  #conn.execute_query(secondary_improvement_type_query) if project.secondary_improvement_types.length > 0
   puts "imported project #{project.mtpid}"
 end
-conn.execute_query('mtpsp_StageToReview 14')
+#conn.execute_query('mtpsp_StageToReview 14')

@@ -1,6 +1,6 @@
 class Project
 	attr :vars
-	def initialize	
+	def set_vars	
 		@vars = {
 		    mtpid: 'project-id',
 		    title: 'title',
