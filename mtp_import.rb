@@ -1,7 +1,13 @@
 class PlanProject
   require 'nokogiri'
-  attr :mtpid 
+  attr :mtpid, :secondary_improvement_types
   
+  def nodeset_content(nodeset)
+    a = []
+    nodeset.each {|e| a<< e.content}
+    a
+  end
+
   def initialize(node)
     c = node.children
     @mtpid = c.css('project-id').first.content.to_i
@@ -21,6 +27,7 @@ class PlanProject
     @completion_year = c.css('completion-year').first.content.to_i
     @mtp_status = c.css('mtp-status').first.content
     @project_on = c.css('location').first.content
+    @project_on.gsub!('"','')
     @project_from = c.css('endpoint-a').first.content
     @project_to = c.css('endpoint-b').first.content
     @mile_post_from = c.css('milepost-a').first.content.empty? ? 'NULL' : c.css('milepost-a').first.content
@@ -28,6 +35,9 @@ class PlanProject
     @county_id = c.css('county-id').first.content.empty? ? 'NULL' : c.css('county-id').first.content
     @func_class_id = c.css('functional-class').first.content.empty? ? 'NULL' : c.css('functional-class').first.content
     @start_year = c.css('start-year').first.content[0,4]
+    @primary_improvement_type_id = c.css('primary-improvement-type-id').first.content
+    s_i_t = c.css('secondary-improvement-types').children 
+    @secondary_improvement_types = nodeset_content(s_i_t.css('number').children)
     @p_a1a = c.css('prioritization-a1a').first.content == 'true' ? 1 : 0
     @p_a1b = c.css("prioritization-a1b").first.content == 'true' ? 1 : 0
     @p_a2a = c.css("prioritization-a2a").first.content== 'true'  ? 1 : 0
@@ -35,8 +45,8 @@ class PlanProject
     @p_a3 = c.css("prioritization-a3").first.content == 'true' ? 1 : 0
     @p_a4 = c.css("prioritization-a4").first.content == 'true' ? 1 : 0
     @p_c1a = c.css("prioritization-c1a").first.content == 'true' ? 1 : 0
-    @p_c1b = c.css("prioritization-c1c").first.content == 'true' ? 1 : 0
-    @p_c1c = c.css("prioritization-c1d").first.content == 'true' ? 1 : 0
+    @p_c1b = c.css("prioritization-c1b").first.content == 'true' ? 1 : 0
+    @p_c1c = c.css("prioritization-c1c").first.content == 'true' ? 1 : 0
     @p_c2a = c.css("prioritization-c2a").first.content == 'true' ? 1 : 0
     @p_c2b = c.css("prioritization-c2b").first.content == 'true' ? 1 : 0
     @p_c3 = c.css("prioritization-c3").first.content == 'true' ? 1 : 0
@@ -95,7 +105,7 @@ class PlanProject
       #{@completion_year},#{@mtp_status},'#{@project_on}','#{@project_from}',
       '#{@project_to}',#{@mile_post_from},#{@mile_post_to},#{@county_id},
       #{@func_class_id},
-      #{@start_year},#{@p_a1a},#{@p_a1b},#{@p_a2a},#{@p_a2b},#{@p_a3},#{@p_a4},
+      #{@start_year},'#{@primary_improvement_type_id}',#{@p_a1a},#{@p_a1b},#{@p_a2a},#{@p_a2b},#{@p_a3},#{@p_a4},
       #{@p_c1a},#{@p_c1b},#{@p_c1c},#{@p_c2a},#{@p_c2b},#{@p_c3},#{@p_c4},#{@p_c5},
       #{@p_f1},#{@p_f2}, #{@p_f3},#{@p_f4a},#{@p_f4b},#{@p_f5},#{@p_f6},
       #{@p_j1a},#{@p_j1b},#{@p_j2}, #{@p_j3},#{@p_j4},
@@ -111,6 +121,17 @@ class PlanProject
       puts e.backtrace.inspect
     end
   end 
+
+  def secondary_improvement_type_query
+    initial_query = <<-QUERY
+      INSERT INTO tblStageProj_ImpType (MTPID, isPrimary, OldID) 
+      VALUES
+    QUERY
+    qry = @secondary_improvement_types.inject(initial_query) do |m, t|
+      t="#{m}(#{@mtpid},0,'#{t}'),"
+    end
+    qry.chop
+  end
 
 end
 
@@ -159,14 +180,18 @@ class DbConn
 
 end
 
-
 mtp_submissions = Submissions.new('mtp_projects.xml'); nil;
 conn = DbConn.new('MTPData_dev')
+#Need to check for duplicate projects in XML here before continuing on
 conn.execute_query('EXEC mtpsp_DeleteFromStagingTables')
 p = mtp_submissions.parse; nil;
 p.each do |project|
   q = project.import_qry
+  # File.open('mtp_project_out.txt', 'a') {|file| file.write("\nQUERY: #{q}\n")}
   conn.execute_query(q)
+  secondary_improvement_type_query = project.secondary_improvement_type_query
+  # File.open('mtp_project_out.txt', 'a') {|file| file.write("\nImp Type QUERY: #{secondary_improvement_type_query}\n")}
+  conn.execute_query(secondary_improvement_type_query) if project.secondary_improvement_types.length > 0
   puts "imported project #{project.mtpid}"
 end
 conn.execute_query('mtpsp_StageToReview 14')
