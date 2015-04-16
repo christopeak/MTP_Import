@@ -16,9 +16,9 @@ class PlanProject < Project
   end
 
   def initialize(node)
-    self.set_vars
+    # self.set_vars
     c = node.children
-    @vars.each do |k, v|
+    @@vars.each do |k, v|
       case v[1]
       when 'string'
         value = c.css(v[0]).first.content
