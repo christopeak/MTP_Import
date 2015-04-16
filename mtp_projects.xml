@@ -1,337 +1,129 @@
 <mtp-projects type="array">
 <mtp-project>
-<id type="integer">56</id>
-<user-id>Auburn</user-id>
+<id type="integer">25</id>
+<user-id>Enumclaw</user-id>
 <status>accepted</status>
-<created-at type="datetime">2015-04-14T11:00:07-07:00</created-at>
-<updated-at type="datetime">2015-04-14T11:29:28-07:00</updated-at>
-<submitted-at type="datetime">2015-04-14T11:09:20-07:00</submitted-at>
-<accepted-at type="datetime">2015-04-14T11:29:28-07:00</accepted-at>
+<created-at type="datetime">2015-04-02T10:29:50-07:00</created-at>
+<updated-at type="datetime">2015-04-10T11:01:51-07:00</updated-at>
+<submitted-at type="datetime">2015-04-10T11:01:31-07:00</submitted-at>
+<accepted-at type="datetime">2015-04-10T11:01:51-07:00</accepted-at>
 <new-project type="boolean">false</new-project>
-<modify-from-unprogrammed-to-constrained type="boolean">false</modify-from-unprogrammed-to-constrained>
-<modify-constrained-project-details type="boolean">true</modify-constrained-project-details>
-<project-id type="integer">976</project-id>
-<sponsoring-agency-id>55</sponsoring-agency-id>
+<modify-from-unprogrammed-to-constrained type="boolean">true</modify-from-unprogrammed-to-constrained>
+<modify-constrained-project-details type="boolean">false</modify-constrained-project-details>
+<project-id type="integer">361</project-id>
+<sponsoring-agency-id>410</sponsoring-agency-id>
 <title>
-S 272nd/277th St Corridor Capacity & Non Motorized Trail Improvements
+SR 410 Channelization: Mtn. Villa Dr. to Watson St. N.
 </title>
-<contact-first-name>James</contact-first-name>
-<contact-last-name>Webb</contact-last-name>
-<contact-email>jwebb@auburnwa.gov</contact-email>
-<contact-phone>253-804-5040</contact-phone>
-<mtp-status>3</mtp-status>
-<description nil="true"/>
+<contact-first-name>Rand</contact-first-name>
+<contact-last-name>Black</contact-last-name>
+<contact-email>rblack@ci.enumclaw.wa.us</contact-email>
+<contact-phone>360-615-5730</contact-phone>
+<mtp-status>NULL</mtp-status>
+<description>
+This project will provide for channelization, roadway, and pedestrian facility improvements along an existing section of the State Route 410 corridor within the City of Enumclaw. The project will modify and optimize the existing 65-foot wide, variable (2-to-4) lane channelization to a proposed 5-lane configuration; one-through lane and one general purpose (through/right turning) lane for each direction with medians, continuous two-way left turn lanes, or left turn pockets as approved by WSDOT. The project will add or upgrade curb, gutters, sidewalks, driveways, storm drainage, illumination, and curb ramps along the SR 410 corridor between mileposts 24.34 to 24.81.
+</description>
 <planning-process>
-Yes. The project is included in the City of Auburn 2015-2020 TIP as project #6. It is also included in the City of Auburn Comprehensive Transportation Plan.
+Enumclaw Comprehensive Plan "Winds of Change", Chapter 5, Page 22, ID # R4a & b.
 </planning-process>
 <letters-of-concurrence>
-Yes. King County and the City of Kent are in concurrence with the revised project.
+WSDOT has approved Channelization Plan (revised) in Feb. 2015 -and- to date Agency is currently awaiting issuance of a WSDOT General Permit for finalization of PS&E Bid Package and then to proceed with FHWA CN Obligation for Ad & Award.
 </letters-of-concurrence>
-<location nil="true"/>
-<endpoint-a nil="true"/>
-<endpoint-b nil="true"/>
-<milepost-a nil="true"/>
-<milepost-b nil="true"/>
-<county-id nil="true"/>
-<total-cost type="decimal">8293101.0</total-cost>
-<constant-dollar-year type="date">2015-04-14</constant-dollar-year>
+<location>SR 410 "Roosevelt Avenue"</location>
+<endpoint-a>Mtn. Villa Dr. (Monroe Ave)</endpoint-a>
+<endpoint-b>Watson St. N.</endpoint-b>
+<milepost-a type="decimal">23.3</milepost-a>
+<milepost-b type="decimal">24.8</milepost-b>
+<county-id>17</county-id>
+<total-cost type="decimal">1944706.0</total-cost>
+<constant-dollar-year type="date">2015-04-02</constant-dollar-year>
 <funds-description>
-Federal grant funding was secured for design and ROW through PSRC, and construction funding was secured with a TIB grant. Local funds are programmed, and Robertson Property Group has executed an agreement to participate in the project financially and with the dedication of ROW.
+Local funds to complete PE Phase and the CN match amount were committed by adoption of the 2015 city budget in Dec. 2014. $1,495,545 CN Federal funds were awarded by PSRC in Nov. 2014. Obligation approval by WSDOT expected in April 2015
 </funds-description>
-<primary-improvement-type-id nil="true"/>
+<primary-improvement-type-id>3-2</primary-improvement-type-id>
 <start-year type="date">2015-01-01</start-year>
-<completion-year type="date">2016-01-01</completion-year>
-<functional-class nil="true"/>
-<change-in-project-scope type="boolean">false</change-in-project-scope>
-<prioritization-a1a nil="true"/>
-<prioritization-a1b nil="true"/>
-<prioritization-a2a nil="true"/>
+<completion-year type="date">2017-01-01</completion-year>
+<functional-class>14</functional-class>
+<change-in-project-scope nil="true"/>
+<prioritization-a1a type="boolean">false</prioritization-a1a>
+<prioritization-a1b type="boolean">false</prioritization-a1b>
+<prioritization-a2a type="boolean">true</prioritization-a2a>
 <prioritization-a2b nil="true"/>
-<prioritization-a3 nil="true"/>
-<prioritization-a4 nil="true"/>
-<prioritization-a4-continued nil="true"/>
-<prioritization-f1 nil="true"/>
-<prioritization-f2 nil="true"/>
-<prioritization-f3 nil="true"/>
-<prioritization-f4a nil="true"/>
-<prioritization-f4b nil="true"/>
-<prioritization-f5 nil="true"/>
-<prioritization-f6 nil="true"/>
-<prioritization-j1a nil="true"/>
-<prioritization-j1b nil="true"/>
-<prioritization-j2 nil="true"/>
-<prioritization-j3 nil="true"/>
-<prioritization-j4 nil="true"/>
-<prioritization-m1 nil="true"/>
-<prioritization-m2 nil="true"/>
-<prioritization-m3 nil="true"/>
-<prioritization-m4 nil="true"/>
-<prioritization-m5 nil="true"/>
-<prioritization-m6 nil="true"/>
-<prioritization-m7 nil="true"/>
-<prioritization-w1a nil="true"/>
-<prioritization-w1b nil="true"/>
-<prioritization-w1c nil="true"/>
-<prioritization-w1d nil="true"/>
-<prioritization-w2 nil="true"/>
-<prioritization-w4a nil="true"/>
-<prioritization-w4b nil="true"/>
-<prioritization-s1a nil="true"/>
-<prioritization-s1b nil="true"/>
-<prioritization-s1c nil="true"/>
-<prioritization-s2 nil="true"/>
-<prioritization-o1 nil="true"/>
-<prioritization-o2a nil="true"/>
-<prioritization-o2b nil="true"/>
-<prioritization-o2c nil="true"/>
-<prioritization-o3a nil="true"/>
-<prioritization-o3b nil="true"/>
-<prioritization-o3c nil="true"/>
-<prioritization-c1a nil="true"/>
-<prioritization-c1b nil="true"/>
-<prioritization-c1c nil="true"/>
-<prioritization-c2a nil="true"/>
-<prioritization-c2b nil="true"/>
-<prioritization-c3 nil="true"/>
-<prioritization-c4 nil="true"/>
-<prioritization-c5 nil="true"/>
-<prioritization-t1 nil="true"/>
-<prioritization-t2 nil="true"/>
-<prioritization-t3 nil="true"/>
-<prioritization-t4 nil="true"/>
+<prioritization-a3 type="boolean">true</prioritization-a3>
+<prioritization-a4 type="boolean">false</prioritization-a4>
+<prioritization-a4-continued/>
+<prioritization-f1 type="boolean">false</prioritization-f1>
+<prioritization-f2 type="boolean">false</prioritization-f2>
+<prioritization-f3 type="boolean">false</prioritization-f3>
+<prioritization-f4a type="boolean">false</prioritization-f4a>
+<prioritization-f4b type="boolean">false</prioritization-f4b>
+<prioritization-f5 type="boolean">false</prioritization-f5>
+<prioritization-f6 type="boolean">true</prioritization-f6>
+<prioritization-j1a type="boolean">false</prioritization-j1a>
+<prioritization-j1b type="boolean">false</prioritization-j1b>
+<prioritization-j2 type="boolean">true</prioritization-j2>
+<prioritization-j3 type="boolean">false</prioritization-j3>
+<prioritization-j4 type="boolean">false</prioritization-j4>
+<prioritization-m1 type="boolean">false</prioritization-m1>
+<prioritization-m2 type="boolean">false</prioritization-m2>
+<prioritization-m3 type="boolean">true</prioritization-m3>
+<prioritization-m4 type="boolean">false</prioritization-m4>
+<prioritization-m5 type="boolean">true</prioritization-m5>
+<prioritization-m6 type="boolean">false</prioritization-m6>
+<prioritization-m7 type="boolean">true</prioritization-m7>
+<prioritization-w1a type="boolean">false</prioritization-w1a>
+<prioritization-w1b type="boolean">false</prioritization-w1b>
+<prioritization-w1c type="boolean">false</prioritization-w1c>
+<prioritization-w1d type="boolean">false</prioritization-w1d>
+<prioritization-w2 type="boolean">false</prioritization-w2>
+<prioritization-w4a type="boolean">false</prioritization-w4a>
+<prioritization-w4b type="boolean">false</prioritization-w4b>
+<prioritization-s1a type="boolean">false</prioritization-s1a>
+<prioritization-s1b type="boolean">true</prioritization-s1b>
+<prioritization-s1c type="boolean">true</prioritization-s1c>
+<prioritization-s2 type="boolean">false</prioritization-s2>
+<prioritization-o1 type="boolean">false</prioritization-o1>
+<prioritization-o2a type="boolean">false</prioritization-o2a>
+<prioritization-o2b type="boolean">false</prioritization-o2b>
+<prioritization-o2c type="boolean">false</prioritization-o2c>
+<prioritization-o3a type="boolean">false</prioritization-o3a>
+<prioritization-o3b type="boolean">false</prioritization-o3b>
+<prioritization-o3c type="boolean">false</prioritization-o3c>
+<prioritization-c1a type="boolean">false</prioritization-c1a>
+<prioritization-c1b type="boolean">false</prioritization-c1b>
+<prioritization-c1c type="boolean">false</prioritization-c1c>
+<prioritization-c2a type="boolean">false</prioritization-c2a>
+<prioritization-c2b type="boolean">false</prioritization-c2b>
+<prioritization-c3 type="boolean">false</prioritization-c3>
+<prioritization-c4 type="boolean">false</prioritization-c4>
+<prioritization-c5 type="boolean">true</prioritization-c5>
+<prioritization-t1 type="boolean">false</prioritization-t1>
+<prioritization-t2 type="boolean">false</prioritization-t2>
+<prioritization-t3 type="boolean">true</prioritization-t3>
+<prioritization-t4 type="boolean">false</prioritization-t4>
 <change-sponsoring-agency nil="true"/>
 <change-cosponsors nil="true"/>
 <change-title nil="true"/>
 <change-mtp-status nil="true"/>
-<change-description type="boolean">false</change-description>
-<change-location-information type="boolean">false</change-location-information>
-<change-total-cost type="boolean">true</change-total-cost>
-<change-constant-dollar-year type="boolean">true</change-constant-dollar-year>
-<change-primary-improvement-type type="boolean">false</change-primary-improvement-type>
-<change-secondary-improvement-types type="boolean">false</change-secondary-improvement-types>
-<change-completion-year type="boolean">true</change-completion-year>
-<change-functional-class type="boolean">false</change-functional-class>
+<change-description nil="true"/>
+<change-location-information nil="true"/>
+<change-total-cost nil="true"/>
+<change-constant-dollar-year nil="true"/>
+<change-primary-improvement-type nil="true"/>
+<change-secondary-improvement-types nil="true"/>
+<change-completion-year nil="true"/>
+<change-functional-class nil="true"/>
 <cosponsors type="array"/>
-<secondary-improvement-types type="array"/>
-</mtp-project>
-<mtp-project>
-<id type="integer">54</id>
-<user-id>KingCounty</user-id>
-<status>accepted</status>
-<created-at type="datetime">2015-04-13T10:10:23-07:00</created-at>
-<updated-at type="datetime">2015-04-13T10:24:30-07:00</updated-at>
-<submitted-at type="datetime">2015-04-13T10:14:31-07:00</submitted-at>
-<accepted-at type="datetime">2015-04-13T10:24:30-07:00</accepted-at>
-<new-project type="boolean">false</new-project>
-<modify-from-unprogrammed-to-constrained type="boolean">false</modify-from-unprogrammed-to-constrained>
-<modify-constrained-project-details type="boolean">true</modify-constrained-project-details>
-<project-id type="integer">4451</project-id>
-<sponsoring-agency-id>617</sponsoring-agency-id>
-<title>Seattle South End Transit Pathways</title>
-<contact-first-name>Paul</contact-first-name>
-<contact-last-name>Takamine</contact-last-name>
-<contact-email>paul.takamine@kingcounty.gov</contact-email>
-<contact-phone>(206) 477-3822</contact-phone>
-<mtp-status>1</mtp-status>
-<description>
-Establish transit pathways between South Portal of SR 99 and 3rd Ave transit spine, funding only shows cost for Columbia Street from 1st Avenue to 3rd Avenue.
-</description>
-<planning-process>?</planning-process>
-<letters-of-concurrence>?</letters-of-concurrence>
-<location nil="true"/>
-<endpoint-a nil="true"/>
-<endpoint-b nil="true"/>
-<milepost-a nil="true"/>
-<milepost-b nil="true"/>
-<county-id nil="true"/>
-<total-cost nil="true"/>
-<constant-dollar-year nil="true"/>
-<funds-description>?</funds-description>
-<primary-improvement-type-id nil="true"/>
-<start-year type="date">2015-01-01</start-year>
-<completion-year type="date">2015-01-01</completion-year>
-<functional-class nil="true"/>
-<change-in-project-scope type="boolean">false</change-in-project-scope>
-<prioritization-a1a nil="true"/>
-<prioritization-a1b nil="true"/>
-<prioritization-a2a nil="true"/>
-<prioritization-a2b nil="true"/>
-<prioritization-a3 nil="true"/>
-<prioritization-a4 nil="true"/>
-<prioritization-a4-continued nil="true"/>
-<prioritization-f1 nil="true"/>
-<prioritization-f2 nil="true"/>
-<prioritization-f3 nil="true"/>
-<prioritization-f4a nil="true"/>
-<prioritization-f4b nil="true"/>
-<prioritization-f5 nil="true"/>
-<prioritization-f6 nil="true"/>
-<prioritization-j1a nil="true"/>
-<prioritization-j1b nil="true"/>
-<prioritization-j2 nil="true"/>
-<prioritization-j3 nil="true"/>
-<prioritization-j4 nil="true"/>
-<prioritization-m1 nil="true"/>
-<prioritization-m2 nil="true"/>
-<prioritization-m3 nil="true"/>
-<prioritization-m4 nil="true"/>
-<prioritization-m5 nil="true"/>
-<prioritization-m6 nil="true"/>
-<prioritization-m7 nil="true"/>
-<prioritization-w1a nil="true"/>
-<prioritization-w1b nil="true"/>
-<prioritization-w1c nil="true"/>
-<prioritization-w1d nil="true"/>
-<prioritization-w2 nil="true"/>
-<prioritization-w4a nil="true"/>
-<prioritization-w4b nil="true"/>
-<prioritization-s1a nil="true"/>
-<prioritization-s1b nil="true"/>
-<prioritization-s1c nil="true"/>
-<prioritization-s2 nil="true"/>
-<prioritization-o1 nil="true"/>
-<prioritization-o2a nil="true"/>
-<prioritization-o2b nil="true"/>
-<prioritization-o2c nil="true"/>
-<prioritization-o3a nil="true"/>
-<prioritization-o3b nil="true"/>
-<prioritization-o3c nil="true"/>
-<prioritization-c1a nil="true"/>
-<prioritization-c1b nil="true"/>
-<prioritization-c1c nil="true"/>
-<prioritization-c2a nil="true"/>
-<prioritization-c2b nil="true"/>
-<prioritization-c3 nil="true"/>
-<prioritization-c4 nil="true"/>
-<prioritization-c5 nil="true"/>
-<prioritization-t1 nil="true"/>
-<prioritization-t2 nil="true"/>
-<prioritization-t3 nil="true"/>
-<prioritization-t4 nil="true"/>
-<change-sponsoring-agency nil="true"/>
-<change-cosponsors nil="true"/>
-<change-title nil="true"/>
-<change-mtp-status nil="true"/>
-<change-description type="boolean">true</change-description>
-<change-location-information type="boolean">false</change-location-information>
-<change-total-cost type="boolean">false</change-total-cost>
-<change-constant-dollar-year type="boolean">false</change-constant-dollar-year>
-<change-primary-improvement-type type="boolean">false</change-primary-improvement-type>
-<change-secondary-improvement-types type="boolean">false</change-secondary-improvement-types>
-<change-completion-year type="boolean">false</change-completion-year>
-<change-functional-class type="boolean">false</change-functional-class>
-<cosponsors type="array"/>
-<secondary-improvement-types type="array"/>
-</mtp-project>
-<mtp-project>
-<id type="integer">53</id>
-<user-id>KingCounty</user-id>
-<status>accepted</status>
-<created-at type="datetime">2015-04-13T10:02:12-07:00</created-at>
-<updated-at type="datetime">2015-04-13T10:09:10-07:00</updated-at>
-<submitted-at type="datetime">2015-04-13T10:05:40-07:00</submitted-at>
-<accepted-at type="datetime">2015-04-13T10:09:10-07:00</accepted-at>
-<new-project type="boolean">false</new-project>
-<modify-from-unprogrammed-to-constrained type="boolean">false</modify-from-unprogrammed-to-constrained>
-<modify-constrained-project-details type="boolean">true</modify-constrained-project-details>
-<project-id type="integer">4128</project-id>
-<sponsoring-agency-id>617</sponsoring-agency-id>
-<title>
-Highline Community College Intermodal Transit Facility and Parking Garage
-</title>
-<contact-first-name>Paul</contact-first-name>
-<contact-last-name>Takamine</contact-last-name>
-<contact-email>paul.takamine@kingcounty.gov</contact-email>
-<contact-phone>(206) 477-3822</contact-phone>
-<mtp-status>1</mtp-status>
-<description>
-Construct a Transit Center with bus layover to facilitate a potential Bus Rapid Transit route on SR 99 in south King County. In addition, the project will construct a parking garage with up to 500 stalls that will provide commuter parking, vanpool and carpool stalls as well as joint use parking for Highline Community College students and staff. This project has been deferred so that it can be coordinated with the ongoing environmental/preliminary planning process for Sound Transi's Federal Way Link extensio project, which will include a station in the vicinity of Highline College.
-</description>
-<planning-process>x</planning-process>
-<letters-of-concurrence>x</letters-of-concurrence>
-<location nil="true"/>
-<endpoint-a nil="true"/>
-<endpoint-b nil="true"/>
-<milepost-a nil="true"/>
-<milepost-b nil="true"/>
-<county-id nil="true"/>
-<total-cost nil="true"/>
-<constant-dollar-year nil="true"/>
-<funds-description>x</funds-description>
-<primary-improvement-type-id nil="true"/>
-<start-year type="date">2015-01-01</start-year>
-<completion-year type="date">2015-01-01</completion-year>
-<functional-class nil="true"/>
-<change-in-project-scope type="boolean">false</change-in-project-scope>
-<prioritization-a1a nil="true"/>
-<prioritization-a1b nil="true"/>
-<prioritization-a2a nil="true"/>
-<prioritization-a2b nil="true"/>
-<prioritization-a3 nil="true"/>
-<prioritization-a4 nil="true"/>
-<prioritization-a4-continued nil="true"/>
-<prioritization-f1 nil="true"/>
-<prioritization-f2 nil="true"/>
-<prioritization-f3 nil="true"/>
-<prioritization-f4a nil="true"/>
-<prioritization-f4b nil="true"/>
-<prioritization-f5 nil="true"/>
-<prioritization-f6 nil="true"/>
-<prioritization-j1a nil="true"/>
-<prioritization-j1b nil="true"/>
-<prioritization-j2 nil="true"/>
-<prioritization-j3 nil="true"/>
-<prioritization-j4 nil="true"/>
-<prioritization-m1 nil="true"/>
-<prioritization-m2 nil="true"/>
-<prioritization-m3 nil="true"/>
-<prioritization-m4 nil="true"/>
-<prioritization-m5 nil="true"/>
-<prioritization-m6 nil="true"/>
-<prioritization-m7 nil="true"/>
-<prioritization-w1a nil="true"/>
-<prioritization-w1b nil="true"/>
-<prioritization-w1c nil="true"/>
-<prioritization-w1d nil="true"/>
-<prioritization-w2 nil="true"/>
-<prioritization-w4a nil="true"/>
-<prioritization-w4b nil="true"/>
-<prioritization-s1a nil="true"/>
-<prioritization-s1b nil="true"/>
-<prioritization-s1c nil="true"/>
-<prioritization-s2 nil="true"/>
-<prioritization-o1 nil="true"/>
-<prioritization-o2a nil="true"/>
-<prioritization-o2b nil="true"/>
-<prioritization-o2c nil="true"/>
-<prioritization-o3a nil="true"/>
-<prioritization-o3b nil="true"/>
-<prioritization-o3c nil="true"/>
-<prioritization-c1a nil="true"/>
-<prioritization-c1b nil="true"/>
-<prioritization-c1c nil="true"/>
-<prioritization-c2a nil="true"/>
-<prioritization-c2b nil="true"/>
-<prioritization-c3 nil="true"/>
-<prioritization-c4 nil="true"/>
-<prioritization-c5 nil="true"/>
-<prioritization-t1 nil="true"/>
-<prioritization-t2 nil="true"/>
-<prioritization-t3 nil="true"/>
-<prioritization-t4 nil="true"/>
-<change-sponsoring-agency nil="true"/>
-<change-cosponsors nil="true"/>
-<change-title nil="true"/>
-<change-mtp-status nil="true"/>
-<change-description type="boolean">true</change-description>
-<change-location-information type="boolean">false</change-location-information>
-<change-total-cost type="boolean">false</change-total-cost>
-<change-constant-dollar-year type="boolean">false</change-constant-dollar-year>
-<change-primary-improvement-type type="boolean">false</change-primary-improvement-type>
-<change-secondary-improvement-types type="boolean">false</change-secondary-improvement-types>
-<change-completion-year type="boolean">false</change-completion-year>
-<change-functional-class type="boolean">false</change-functional-class>
-<cosponsors type="array"/>
-<secondary-improvement-types type="array"/>
+<secondary-improvement-types type="array">
+<secondary-improvement-type>
+<category>nonmotorized</category>
+<created-at type="datetime">2012-04-17T16:00:42-07:00</created-at>
+<id type="integer">43</id>
+<name>Sidewalk</name>
+<number>27</number>
+<position type="integer">43</position>
+<updated-at type="datetime">2012-04-17T16:00:42-07:00</updated-at>
+</secondary-improvement-type>
+</secondary-improvement-types>
 </mtp-project>
 </mtp-projects>

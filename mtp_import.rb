@@ -26,8 +26,10 @@ class PlanProject < Project
       when 'string'
         value = c.css(v[0]).first.content
         value.gsub! "'", "`"
+        value.gsub! "\"", "`"
       when 'int'
         value = c.css(v[0]).first.content.empty? ? 'NULL' : c.css(v[0]).first.content.to_i
+        value == 0 ? value = 'NULL' : value
       when 'decimal'
         value = c.css(v[0]).first.content.empty? ? 'NULL' : c.css(v[0]).first.content.to_f
       when 'bit'
