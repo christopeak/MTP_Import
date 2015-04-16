@@ -29,7 +29,6 @@ class PlanProject < Project
         value.gsub! "\"", "`"
       when 'int'
         value = c.css(v[0]).first.content.empty? ? 'NULL' : c.css(v[0]).first.content.to_i
-        value == 0 ? value = 'NULL' : value
       when 'decimal'
         value = c.css(v[0]).first.content.empty? ? 'NULL' : c.css(v[0]).first.content.to_f
       when 'bit'
@@ -39,7 +38,7 @@ class PlanProject < Project
     end
     @contact_name = @contact_first_name + ' ' + @contact_last_name
     @start_year = c.css('start-year').first.content[0,4]
-
+    @mtp_status == 0 ? @mtp_status = 'NULL' : @mtp_status
     s_i_t = c.css('secondary-improvement-types').children 
     @secondary_improvement_types = nodeset_content(s_i_t.css('number').children)
 
@@ -126,7 +125,6 @@ class DbConn
       File.open('mtp_project_out.txt', 'a') {|file| file.write("\nFAILED QUERY: #{combined_command}\n")}
     end
   end
-
 end
 
 mtp_submissions = Submissions.new('mtp_projects.xml'); nil;
@@ -144,3 +142,4 @@ p.each do |project|
   puts "imported project #{project.mtpid}"
 end
 conn.execute_query('mtpsp_StageToReview 14')
+puts "Finished importing."
