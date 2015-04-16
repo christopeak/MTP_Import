@@ -13,9 +13,7 @@ class PlanProject < Project
   attr :mtpid, :secondary_improvement_types
 
   def nodeset_content(nodeset)
-    a = []
-    nodeset.each {|e| a<< e.content}
-    a
+    a = nodeset.map {|e| e.content}
   end
 
   def initialize(node)
@@ -41,7 +39,6 @@ class PlanProject < Project
     @mtp_status == 0 ? @mtp_status = 'NULL' : @mtp_status
     s_i_t = c.css('secondary-improvement-types').children 
     @secondary_improvement_types = nodeset_content(s_i_t.css('number').children)
-
   end
   
   def import_qry
