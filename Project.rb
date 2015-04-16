@@ -24,7 +24,7 @@ class Project
 		    primary_improvement_type_id: ['primary-improvement-type-id', 'string'],
 		    p_a1a: ['prioritization-a1a','bit'],		    
 		    p_a1b: ["prioritization-a1b",'bit'],		    
-		    p_a2a: ["prioritization-a2a0"'bit'],
+		    p_a2a: ["prioritization-a2a",'bit'],
 		    p_a2b: ["prioritization-a2b",'bit'],		    
 		    p_a3: ["prioritization-a3", 'bit'],	    
 		    p_a4: ["prioritization-a4", 'bit'],   
@@ -76,7 +76,7 @@ class Project
 		    p_w1d: ["prioritization-w1d",'bit'],
 		    p_w2: ["prioritization-w2", 'bit'],
 		    p_w4a: ["prioritization-w4a",'bit'],
-		    p_w4b: ["prioritization-w4b" 'bit'],
+		    p_w4b: ["prioritization-w4b",'bit'],
 		   }
 		 end
 end
