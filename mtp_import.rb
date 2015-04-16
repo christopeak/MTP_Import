@@ -16,7 +16,7 @@ class PlanProject < Project
   end
 
   def initialize(node)
-    # self.set_vars
+    # for each element in the @@vars array, create an instance variable 
     c = node.children
     @@vars.each do |k, v|
       case v[1]
