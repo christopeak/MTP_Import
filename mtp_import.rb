@@ -1,6 +1,5 @@
 
 require_relative 'Project'
-require 'active_support'
 
 class String
   def is_integer?
