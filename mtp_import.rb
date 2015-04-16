@@ -98,11 +98,7 @@ class Submissions
   def parse
     item_nodes = @xml_doc.xpath('//mtp-projects/mtp-project')
     projects = []
-    item_nodes.each do |node|
-      proj = PlanProject.new(node)
-      projects<< proj
-    end
-    projects
+    projects = item_nodes.map {|node| PlanProject.new(node) }
   end
 end
 
