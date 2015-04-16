@@ -97,7 +97,6 @@ class Submissions
 
   def parse
     item_nodes = @xml_doc.xpath('//mtp-projects/mtp-project')
-    projects = []
     projects = item_nodes.map {|node| PlanProject.new(node) }
   end
 end
